@@ -1,0 +1,751 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1251">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.13  (Win32)">
+	<META NAME="AUTHOR" CONTENT="Viny.63">
+	<META NAME="CREATED" CONTENT="20200411;13190000">
+	<META NAME="CHANGEDBY" CONTENT="Viny.63">
+	<META NAME="CHANGED" CONTENT="20201002;14460000">
+	<META NAME="AppVersion" CONTENT="16.0000">
+	<META NAME="DocSecurity" CONTENT="0">
+	<META NAME="HyperlinksChanged" CONTENT="false">
+	<META NAME="LinksUpToDate" CONTENT="false">
+	<META NAME="ScaleCrop" CONTENT="false">
+	<META NAME="ShareDoc" CONTENT="false">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 21cm 29.7cm; margin-right: 1.5cm; margin-top: 2cm; margin-bottom: 2cm }
+		* {margin-left: 0;}
+		font{font-size: 20px; line-height: 103%; widows: 2; orphans: 2}
+		img {text-align: center;}
+		table {text-align: center; margin-left: 420px;}
+		P { text-indent: -0.02cm; margin-bottom: 0.21cm; direction: ltr; color: #000000; line-height: 103%; widows: 2; orphans: 2 }
+		P.western { font-family: "Times New Roman", serif; font-size: 20px }
+		P.cjk { font-family: "Times New Roman"; font-size: 20px; so-language: ru-RU }
+		P.ctl { font-family: "Times New Roman" }
+		H2 {text-indent: -0.02cm; margin-bottom: 0cm; direction: ltr; color: #000000; line-height: 103%; page-break-inside: avoid; widows: 2; orphans: 2; page-break-after: avoid }
+		H2.western { font-family: "Times New Roman", sans-serif; font-size: 20px; font-weight: bold }
+		H2.cjk { font-family: "Times New Roman"; font-size: 20px; so-language: ru-RU; font-weight: bold }
+		H2.ctl { font-family: "Times New Roman"; font-size: 20px }
+		H3 {text-indent: -0.02cm; margin-bottom: 0.17cm; direction: ltr; color: #000000; line-height: 103%; page-break-inside: avoid; widows: 2; orphans: 2; page-break-after: avoid }
+		H3.western { font-family: "Cambria", sans-serif; font-size: 20px; font-weight: bold }
+		H3.cjk { font-family: "Cambria"; font-size: 20px; so-language: ru-RU; font-weight: bold }
+		H3.ctl { font-family: "Cambria"; font-size: 20px }
+		H4 {text-indent: -0.02cm; margin-bottom: 0.2cm; direction: ltr; color: #000000; line-height: 103%; page-break-inside: avoid; widows: 2; orphans: 2; page-break-after: avoid }
+		H4.western { font-family: "Cambria", sans-serif; font-size: 20px; font-weight: bold }
+		H4.cjk { font-family: "Cambria"; font-size: 20px; so-language: ru-RU; font-weight: bold }
+		H4.ctl { font-family: "Cambria"; font-size: 20px }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="ru-RU" TEXT="#000000" LINK="#000080" VLINK="#800000" DIR="LTR">
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Практическая
+работа 11</B></FONT></FONT></FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<BR>
+</P>
+<P ALIGN=CENTER STYLE="            margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Изучение&nbsp;сигнализация
+на основе протокола&nbsp;SIP</B></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>1.
+Цель работы</B></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>1.1
+Изучить назначение сигнализации SIP</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>1.2
+Изучить виды сигнальных сообщений SIP</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>1.2
+Освоить принципы организации сигнального канала по протоколу SIP</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="            margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>2.
+Задание</B></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>2.1
+Ознакомиться с назначением протокола SIP</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>2.2
+Зарисовать схемы организации связи по протоколу SIP</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>2.3
+Ответить на контрольные вопросы</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>2.4.
+Ответить на индивидуальные задания по вариантам</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.25cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%"><A NAME="_GoBack"></A>
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>2.5
+Сделать выводы по работе</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 1cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<BR>
+</P>
+<TABLE WIDTH=652 BORDER=1 BORDERCOLOR="#00000a" CELLPADDING=7 CELLSPACING=0>
+	<COL WIDTH=117>
+	<COL WIDTH=156>
+	<COL WIDTH=156>
+	<COL WIDTH=165>
+	<TR VALIGN=TOP>
+		<TD WIDTH=117>
+			<P ALIGN=CENTER><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Варианты</B></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=156>
+			<P ALIGN=CENTER><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>1,
+			3, 5, 7</B></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=156>
+			<P ALIGN=CENTER><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>9,
+			11, 13, 15</B></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=165>
+			<P ALIGN=CENTER><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>17,
+			19, 21, 23</B></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=117>
+			<P ALIGN=CENTER><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Индивидуальные
+			задания</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=156>
+			<P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Пояснить
+			</FONT></FONT></FONT>
+			</P>
+			<P ALIGN=JUSTIFY><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>место
+			протокола SIP в стеке протоколов TCP/IP</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=156>
+			<P ALIGN=JUSTIFY><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Дать
+			пояснение </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>построения
+			сети SIP</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=165>
+			<P ALIGN=JUSTIFY><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Схема
+			действия протокола </FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>&quot;клиент-сервер&quot;</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=117>
+			<P ALIGN=CENTER><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Варианты</B></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=156>
+			<P ALIGN=CENTER><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>2,
+			4, 6, 8</B></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=156>
+			<P ALIGN=CENTER><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>10,
+			12, 14, 16</B></FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=165>
+			<P ALIGN=CENTER><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>18,
+			20, 22, 24</B></FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=117>
+			<P ALIGN=CENTER><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Индивидуальные
+			задания</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=156>
+			<P ALIGN=CENTER STYLE="margin-bottom: 0cm; background: #ffffff"><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Сеть
+			SIP с прокси-сервером</FONT></FONT></FONT></P>
+			<P ALIGN=JUSTIFY><BR>
+			</P>
+		</TD>
+		<TD WIDTH=156>
+			<P ALIGN=JUSTIFY><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Установление
+			и завершение сеанса связи по протоколу SIP</FONT></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=165>
+			<P ALIGN=JUSTIFY><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Режим
+			работы сервера переадресации</FONT></FONT></FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 1cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="             margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>3.
+Содержание отчета:</B></FONT></FONT></FONT></P>
+<OL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Цель
+	работы.</FONT></FONT></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Схемы
+	связи</FONT></FONT></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Ответы
+	на контрольные вопросы</FONT></FONT></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Вывод
+	о применении протокола SIP</FONT></FONT></FONT></P>
+</OL>
+<P ALIGN=JUSTIFY STYLE="             margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="             margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Контрольные
+вопросы:</B></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>1.
+Для чего предназначен протокол SIP?</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>2.
+По какой схеме работает протокол SIP?</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>3.
+С помощью какого транспортного протокола переносятся сигнальные
+сообщения SIP?</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>4.
+Какие команды запросов использует SIP?</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>5.
+Какие команды ответов использует SIP?</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>6.
+Для чего предназначен сервер переадресации в схеме построения SIP
+сети?</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>7.
+Какие услуги связи организуются при подключении абонентом
+IP-телефонии?</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>8.
+Что представляет собой команда INVITE?</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>9.
+Какой сигнальный порт используется для обмена служебными сообщениями
+SIP?</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>10.
+Чем протокол SIP отличается от протокола H.323?</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 1cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<BR>
+</P>
+<P ALIGN=CENTER STYLE="             text-indent: 1cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Пояснения
+к работе</B></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 1cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<BR>
+</P>
+<P ALIGN=CENTER STYLE="             text-indent: 1cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Краткие
+теоретические сведения</B></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 1cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Протокол
+инициирования сеансов - Session Initiation Protocol (SIP) является
+протоколом прикладного уровня и предназначается для организации,
+модификации и завершения сеансов связи (например, мультимедийных
+конференций, телефонных соединений). Пользователи могут принимать
+участие в существующих сеансах связи, приглашать других пользователей
+и быть приглашенными ими к новому сеансу связи.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 1.27cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Протокол
+SIP разработан группой MMUSIC (Multiparty Multimedia Session Control)
+комитета IETF (Internet Engineering Task Force), а спецификации
+протокола представлены в документе RFC 2543 [54]. В основу протокола
+заложены следующие принципы:</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 1.27cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>1.
+Персональная мобильность пользователей. Пользователи могут
+перемещаться без ограничений в пределах сети. Пользователю
+присваивается уникальный идентификатор, а сеть предоставляет ему
+услуги связи вне зависимости от того, где он находится.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 1.27cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>2.
+Масштабируемость сети. Она характеризуется, в первую очередь,
+возможностью увеличения количества элементов сети при её расширении.
+Серверная структура сети, построенная на базе протокола SIP, отвечает
+этому требованию.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 1.27cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>3.
+Расширяемость протокола. Она характеризуется возможностью дополнения
+протокола новыми функциями при введении новых услуг и его адаптации к
+работе с различными приложениями.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Расширение
+функций протокола SIP может быть произведено за счет введения новых
+заголовков сообщений, которые должны быть зарегистрированы в
+организации IANA</FONT></FONT></FONT><FONT COLOR="#000000"><SUP><FONT FACE="Times New Roman, serif"><FONT SIZE=3>7</FONT></FONT></SUP></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>.
+При этом, если SIP-сервер принимает сообщение с неизвестными ему
+атрибутами, то он просто игнорирует их.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Для
+расширения возможностей протокола SIP могут быть также добавлены и
+новые типы сообщений.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>4.
+Интеграция в стек существующих протоколов Интернет, разработанных
+IETF. Протокол SIP является частью глобальной архитектуры
+мультимедиа, разработанной IETF. Архитектура включает в себя также и
+другие протоколы: резервирования ресурсов (Resource Reservation
+Protocol - RSVP, RFC 2205), транспортный протокол реального времени
+(Real-Time Transport Protocol - RTP, RFC 1889), протокол передачи
+потоковой информации в реальном времени (Real-Time Streaming Protocol
+- RTSP, RFC 2326), протокол описания параметров связи (Session
+Description Protocol -SDP, RFC 2327). Однако функции протокола SIP не
+зависят ни от одного из этих протоколов.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>5.
+Взаимодействие с другими протоколами сигнализации. Протокол SIP может
+быть использован совместно с протоколом Н.323.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Одной
+из важнейших особенностей протокола SIP является его независимость от
+транспортных технологий. Структура сообщений SIP не зависит от
+выбранной транспортной технологии. Но, в то же время, предпочтение
+отдается технологии маршрутизации пакетов IP и протоколу UDP. Следует
+оговориться, что для этого необходимо создать дополнительные
+механизмы для надежной доставки сигнальной информации. К таким
+механизмам относятся повторная передача информации при ее потере,
+подтверждение приема и др.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Сигнальные
+сообщения могут переноситься не только протоколом транспортного
+уровня UDP, но и протоколом TCP. Протокол UDP позволяет быстрее, чем
+TCP, доставлять сигнальную информацию (даже с учетом повторной
+передачи неподтвержденных сообщений), а также вести параллельный
+поиск местоположения пользователей и передавать приглашения к участию
+в сеансе связи в режиме многоадресной рассылки. В свою очередь,
+протокол TCP упрощает работу с межсетевыми экранами (firewall), а
+также гарантирует надежную доставку данных. При использовании
+протокола TCP разные сообщения, относящиеся к одному вызову, либо
+могут передаваться по одному TCP-соединению, либо для каждого запроса
+и ответа на него может открываться отдельное TCP-соединение. На
+рисунке.1 показано место, занимаемое протоколом SIP в стеке
+протоколов TCP/IP.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<IMG SRC="%D0%9F%D0%A0%2011%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_61617161.png" ALIGN=BOTTOM WIDTH=419 HEIGHT=255 BORDER=0></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Рисунок.1
+Место протокола SIP в стеке протоколов TCP/IP</B></FONT></FONT></FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>По
+сети с маршрутизацией пакетов IP может передаваться пользовательская
+информация практически любого вида: речь, видео и данные, а также
+любая их комбинация. При организации связи между терминалами
+пользователей необходимо известить встречную сторону, какого рода
+информация может приниматься (передаваться), алгоритм ее кодирования
+и адрес, на который следует передавать информацию. Таким образом,
+одним из обязательных условий организации связи при помощи протокола
+SIP является обмен между сторонами данными об их функциональных
+возможностях. Для этой цели чаще всего используется протокол описания
+сеансов связи - SDP (Session Description Protocol). Поскольку в
+течение сеанса связи может производиться его модификация,
+предусмотрена передача сообщений SIP с новыми описаниями сеанса
+средствами SDP.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Для
+передачи речевой информации комитет IETF предлагает использовать
+протокол RTP, рассмотренный выше, но сам протокол SIP не исключает
+возможность применения для этих целей и других протоколов.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Протокол
+SIP предусматривает организацию конференций трех видов:</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000">&bull; <FONT FACE="Times New Roman, serif"><FONT SIZE=3>в
+режиме многоадресной рассылки (multicasting), когда информация
+передается на один multicast-адрес, а затем доставляется сетью
+конечным адресатам;</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000">&bull; <FONT FACE="Times New Roman, serif"><FONT SIZE=3>при
+помощи устройства управления конференции (MCU), к которому участники
+конференции передают информацию в режиме точка-точка, а оно, в свою
+очередь, обрабатывает ее (т.е. смешивает или коммутирует) и рассылает
+участникам конференции;</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000">&bull; <FONT FACE="Times New Roman, serif"><FONT SIZE=3>путем
+соединения каждого пользователя с каждым в режиме точка-точка.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Протокол
+SIP дает возможность присоединения новых участников к уже
+существующему сеансу связи, т.е. двусторонний сеанс может перейти в
+конференцию.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Для
+организации взаимодействия с существующими приложениями IP-сетей и
+для обеспечения мобильности пользователей протокол SIP использует
+адрес, подобный адресу электронной почты. В качестве адресов рабочих
+станций используются специальные универсальные указатели ресурсов -
+URL (Universal Resource Locators), так называемые SIP URL</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>SIP-адреса
+бывают четырех типов:</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000">&bull; <FONT FACE="Times New Roman, serif"><FONT SIZE=3>имя@домен;</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000">&bull; <FONT FACE="Times New Roman, serif"><FONT SIZE=3>имя@хост,</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000">&bull; <FONT FACE="Times New Roman, serif"><FONT SIZE=3>имя@IР-адрес;</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000">&bull; №<FONT FACE="Times New Roman, serif"><FONT SIZE=3>телефона@шлюз.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Таким
+образом, адрес состоит из двух частей. Первая часть - это имя
+пользователя, зарегистрированного в домене или на рабочей станции.
+Если вторая часть адреса идентифицирует какой-либо шлюз, то в первой
+указывается телефонный номер абонента.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Во
+второй части адреса указывается имя домена, рабочей станции или
+шлюза. Для определения IP-адреса устройства необходимо обратиться к
+службе доменных имен - Domain Name Service (DNS). Если же во второй
+части SIP-адреса размещается IP-адрес, то с рабочей станцией можно
+связаться напрямую.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>В
+начале SIP-адреса ставится слово &laquo;sip:&raquo;, указывающее, что
+это именно SIP-адрес.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Примеры
+SIP-адресов:</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>sip:
+als@</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>sip:
+user1@192.168.100.152</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>sip:
+294-75-47@</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>На
+рисунке 2 представлена упрощенная схема действия протокола.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<IMG SRC="%D0%9F%D0%A0%2011%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_7f21dc94.png" ALIGN=BOTTOM WIDTH=504 HEIGHT=198 BORDER=0></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Рисунок
+2 Архитектура &quot;клиент-сервер&quot;</B></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Клиент
+выдает запросы, в которых указывает, что он желает получить от
+сервера. Сервер принимает запрос, обрабатывает его и выдает ответ,
+который может содержать уведомление об успешном выполнении запроса,
+уведомление об ошибке или информацию, затребованную клиентом.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Управление
+процессом обслуживания вызова распределено между разными элементами
+сети SIP. Основным функциональным элементом, реализующим функции
+управления соединением, является терминал. Остальные элементы сети
+отвечают за маршрутизацию вызовов, а в некоторых случаях
+предоставляют дополнительные услуги.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>В
+случае, когда клиент и сервер взаимодействуют непосредственно с
+пользователем они называются, соответственно, клиентом агента
+пользователя - User Agent Client (UAC) - и сервером агента
+пользователя - User Agent Server (UAS).</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Кроме
+терминалов определены два основных типа сетевых элементов SIP:
+прокси-сервер (proxy server) и сервер переадресации (redirect
+server).</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Прокси-сервер
+принимает запросы, обрабатывает их и, в зависимости от типа запроса,
+выполняет определенные действия. Это может быть поиск и вызов
+пользователя, маршрутизация запроса, предоставление услуг и т.д.
+Прокси-сервер состоит из клиентской и серверной частей, поэтому может
+принимать вызовы, инициировать собственные запросы и возвращать
+ответы. Прокси-сервер может быть физически совмещен с сервером
+определения местоположения или существовать отдельно от этого
+сервера.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Предусмотрено
+два типа прокси-серверов - с сохранением состояний (stateful) и без
+сохранения состояний (stateless).</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Сервер
+первого типа хранит в памяти входящий запрос, который явился причиной
+генерации одного или нескольких исходящих запросов. Эти исходящие
+запросы сервер также запоминает. Все запросы хранятся в памяти
+сервера только до окончания транзакции, т.е. до получения ответов на
+запросы. Он позволяет предоставить большее количество услуг, но
+работает медленнее, чем сервер второго типа. Он может применяться для
+обслуживания небольшого количества клиентов, например, в локальной
+сети. Прокси-сервер должен сохранять информацию о состояниях, если
+он:</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>-
+использует протокол TCP для передачи сигнальной информации;</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>-
+работает в режиме многоадресной рассылки сигнальной информации;</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>-
+размножает запросы.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Последний
+случай имеет место, когда прокси-сервер ведет поиск вызываемого
+пользователя сразу в нескольких направлениях, т.е. один запрос,
+который пришел к прокси-серверу, размножается и передается
+одновременно по всем этим направлениям.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Сервер
+без сохранения состояний просто ретранслирует запросы и ответы,
+которые получает. Он работает быстрее, чем сервер первого типа, так
+как ресурс процессора не тратится на запоминание состояний,
+вследствие чего сервер этого типа может обслужить большее количество
+пользователей. Недостатком такого сервера является то, что на его
+базе можно реализовать лишь наиболее простые услуги. Впрочем,
+прокси-сервер может функционировать как сервер с сохранением
+состояний для одних пользователей и как сервер без сохранения
+состояний - для других.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="             text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Алгоритм
+работы пользователей с прокси-сервером выглядит следующим образом.
+Поставщик услуг IP-телефонии сообщает адpec прокси-сервера своим
+пользователям. Вызывающий пользователь передает к прокси-серверу
+запрос соединения. Сервер обрабатывает запрос, определяет
+местоположение вызываемого пользователя и передает запрос этому
+пользователю, а затем получает от него ответ, подтверждающий успешную
+обработку запроса, и транслирует этот ответ пользователю, передавшему
+запрос. Прокси-сервер может модифицировать некоторые заголовки
+сообщений, которые он транслирует, причем каждый сервер, обработавший
+запрос в процессе его передачи от источника к приемнику, должен
+указать это в SIP-запросе для того, чтобы ответ на запрос вернулся по
+такому же пути.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Сервер
+переадресации предназначен для определения текущего адреса
+вызываемого пользователя. Вызывающий пользователь передает к серверу
+сообщение с известным ему адресом вызываемого пользователя, а сервер
+обеспечивает переадресацию вызова на текущий адрес этого
+пользователя. Для реализации этой функции сервер переадресации должен
+взаимодействовать с сервером определения местоположения.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            text-indent: 1.27cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Пользователь
+может перемещаться в пределах сети, поэтому необходим механизм
+определения его местоположения в текущий момент времени.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            text-indent: 1.27cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Для
+хранения текущего адреса пользователя служит сервер определения
+местоположения пользователей, представляющий собой базу данных
+адресной информации. Кроме постоянного адреса пользователя, в этой
+базе данных может храниться один или несколько текущих адресов.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            text-indent: 1.27cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Этот
+сервер может быть совмещен с прокси-сервером или быть реализован
+отдельно от прокси-сервера, но иметь возможность связываться с ним.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            text-indent: 1.27cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Сети
+SIP строятся из элементов трех основных типов: терминалов,
+прокси-серверов и серверов переадресации. На рисунке 3 приведен
+пример возможного построения сети SIP.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<IMG SRC="%D0%9F%D0%A0%2011%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_m13e83085.png" ALIGN=BOTTOM WIDTH=600 HEIGHT=392 BORDER=0></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Рисунок
+3. Пример построения сети SIP</B></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            text-indent: 1cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Терминалы
+могут быть двух типов:</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            text-indent: 1cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>1.Персональный
+компьютер со звуковой платой и программным обеспечением SIP-клиента
+(UA)</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            text-indent: 1cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>2.SIP-телефон,
+подключающийся непосредственно к ЛВС Ethernet.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            text-indent: 1cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Путем
+программирования сервер можно настроить на разные алгоритмы работы:
+он может обслуживать часть пользователей по одним правилам, а другую
+часть - по иным.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            text-indent: 1cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>В
+протоколе SIP определены два вида сигнальных сообщений &mdash; запрос
+и ответ. Они имеют текстовый формат и базируются на протоколе HTTP. В
+запросе указываются процедуры, вызываемые для выполнения требуемых
+операций, а в ответе &mdash; результаты их выполнения. Определены
+шесть процедур:</FONT></FONT></FONT></P>
+<UL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>INVITE
+	&mdash; приглашает пользователя принять участие в сеансе связи
+	(служит для установления нового соединения; может содержать
+	параметры для согласования);</FONT></FONT></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>BYE
+	&mdash; завершает соединение между двумя пользователями;</FONT></FONT></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>OPTIONS
+	&mdash; используется для передачи информации о поддерживаемых
+	характеристиках (эта передача может осуществляться напрямую между
+	двумя агентами пользователей или через сервер SIP);</FONT></FONT></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>АСК
+	&mdash; используется для подтверждения получения сообщения или для
+	положительного ответа на команду INVITE;</FONT></FONT></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>CANCEL
+	&mdash; прекращает поиск пользователя;</FONT></FONT></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>REGISTER
+	&mdash; передает информацию о местоположении пользователя на сервер
+	SIP, который может транслировать ее на сервер адресов (Location
+	Server).</FONT></FONT></FONT></P>
+</UL>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<IMG SRC="%D0%9F%D0%A0%2011%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_m7b5c4d5f.png" ALIGN=BOTTOM WIDTH=573 HEIGHT=388 BORDER=0></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Рисунок
+4. Возможный сценарий установления и завершения сеанса связи по
+протоколу</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>SIP.</B></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>SIP
+состоит из трех типов элементов сети: терминалы (серверы агента
+пользователя), прокси - серверы и серверы переадресации.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Терминалы
+в протоколе SIP - это оконечные устройства, обеспечивающее
+двухстороннюю связь в реальном времени с другим устройством, но, в
+отличие от терминалов, описанных в рекомендациях Н.323, терминалы SIP
+выполняют функции шлюза.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Прокси-сервер
+принимает запрос от терминалов, обрабатывает, после чего отправляет
+дальше или на другой прокси . сервер, или оконечному терминалу. Кроме
+того, прокси-сервер обрабатывает все запросы и ответы от имени того
+терминала (или другого прокси), запрос от которого обрабатывается в
+данный момент. Таким образом, прокси&ndash;сервер выступает
+посредником между двумя терминалами.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Сервер
+переадресации получает запросы от терминала (прокси - серверов),
+обрабатывает их и возвращает этому терминалу</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>&nbsp;</B></FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>обработанную
+информацию, необходимую для дальнейшей маршрутизации вызова. Затем,
+терминал (прокси) непосредственно устанавливает соединение, согласно
+адресу, указанному сервером перенаправления. Существует также и
+безсерверный вариант соединения, когда один терминал может посылать
+запросы непосредственно другому терминалу.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            text-indent: 0.75cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Кроме
+того, в сетях SIP используются серверы местоположения (location
+server). Принципы его работы не входят в рекомендации SIP. Сервер
+SIP, после принятия запроса, обращается к серверу местоположения для
+того, чтобы узнать адрес, по которому можно найти пользователя,
+сервер местоположения в ответ сообщает: либо список возможных адресов
+местоположения пользователя, либо информирует о невозможности найти
+их.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<IMG SRC="%D0%9F%D0%A0%2011%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_m2993b1b7.png" ALIGN=BOTTOM WIDTH=602 HEIGHT=281 BORDER=0></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Рисунок
+5 . Сеть SIP с прокси-сервером</B></FONT></FONT></FONT></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<BR>
+</P>
+<P ALIGN=JUSTIFY STYLE="            text-indent: 1cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>В
+сети с прокси-сервером для успешного установления двустороннего
+соединения между инициирующей и принимающей стороной требуется
+выполнить следующие последовательные шаги:</FONT></FONT></FONT></P>
+<OL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Прокси-сервер
+	принимает запрос INVITE от инициирующей стороны.</FONT></FONT></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Прокси-сервер
+	определяет местонахождение клиента, используя предоставленные услуги
+	адресации и определения местоположения</FONT></FONT></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>.</B></FONT></FONT></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>По
+	найденному адресу выдается запрос INVITE от сервера к принимающей
+	стороне.</FONT></FONT></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Пользовательский
+	агент вызываемой стороны уведомляет пользователя и возвращает
+	указание об успехе обратно прокси-серверу.</FONT></FONT></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>От
+	прокси-сервера к вызывающей стороне отправляют ответное сообщение
+	&quot;Все в порядке&quot; (код 200).</FONT></FONT></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Вызывающая
+	сторона подтверждает прием ответного сообщения выдачей запроса ACK,
+	который прокси-сервер переадресовывает или отправляет
+	непосредственно к вызываемой стороне.</FONT></FONT></FONT></P>
+</OL>
+<P ALIGN=JUSTIFY STYLE="            text-indent: 1cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>На
+рисунке 6 представлена архитектура сети SIP c сервером переадресации.</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="text-indent: -0.96cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<IMG SRC="%D0%9F%D0%A0%2011%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_m5258de23.png" ALIGN=BOTTOM WIDTH=593 HEIGHT=325 BORDER=0></P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Рисунок
+6 Режим работы сервера переадресации</B></FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            text-indent: 1cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>В
+сети SIP c сервером-переадресации для успешного установления
+двустороннего соединения требуется выполнить следующие
+последовательные шаги:</FONT></FONT></FONT></P>
+<OL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Сервер
+	переадресации принимает запрос INVITE от вызывающей стороны и
+	связывается с услугами определения местонахождения по
+	предоставленной информации.</FONT></FONT></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>После
+	того, как местоположение пользователя определено, сервер
+	переадресации возвращает адрес непосредственно к вызывающей стороне.
+	В отличие от прокси-сервера, сервер переадресации не выдает INVITE.</FONT></FONT></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Пользовательский
+	агент отправляет ACK к серверу переадресации, подтверждая
+	завершенную транзакцию.</FONT></FONT></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Пользовательский
+	агент отправляет запрос INVITE непосредственно по адресу,
+	возвращенному сервером переадресации.</FONT></FONT></FONT></P>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+	<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Вызываемая
+	сторона предоставляет указание о благоприятном установлении
+	соединения (реакция &quot;Все в порядке&quot; с кодом статуса 200),
+	вызывающая сторона возвращает ACK.</FONT></FONT></FONT></P>
+</OL>
+<P ALIGN=JUSTIFY STYLE="            text-indent: 1cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Подход,
+основанный на использовании протокола SIP (Session Initiation
+Protocol), ориентирован на интеграцию услуги передачи речевого
+трафика по IP-сетям с остальными услугами Internet. Этот подход
+является намного более простым для реализации в сравнении с H.323, но
+меньше подходит для организации взаимодействия с телефонными сетями.
+В основном это связано с тем, что сигнальный протокол SIP,
+базирующийся на основе протокола HTTP, достаточно плохо согласуется с
+системами сигнализации, используемыми в ТфОП. Кроме того, сервер SIP
+в общем случае не сохраняет сведений о текущих соединениях
+(Stateless), то время как узлы ТфОП напротив сохраняют информацию обо
+всех установленных соединениях (Statefull). Второй вариант больше
+подходит для поставщиков услуг Интернета для предоставления еще одной
+услуги - интернет-телефонии. Причем эта</FONT></FONT></FONT></P>
+<P ALIGN=JUSTIFY STYLE="            text-indent: 1cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>услуга
+будет являться всего лишь небольшой частью пакета услуг, и будет
+предоставляться, например, по фиксированным тарифам, при этом будет
+использоваться максимально упрощенная схема управления услугами.</FONT></FONT></FONT></P>
+</BODY>
+</HTML>

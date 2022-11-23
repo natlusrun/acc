@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Описание работы схемы </title>
+</head>
+<body text="#A6B727" bgcolor="#A6B727" link="#000080" vlink="#0000CC" alink="#000080">
+<center>
+<a href="text0.html">Первая страница</a> <a href="text3.html">Назад</a> <a href="text5.html">Продолжить</a> <a href="text15.html">Последняя страница</a> <a href="ЛК%206%20КС%20и%20СА.htm">Обзор</a> <a href="img4.html">Изображения</a></center><br>
+<h1 style="direction:ltr;"><b>Описание работы схемы </b></h1>
+<ul><li style="direction:ltr;"><h2><b>1. На первом шаге </b>происходит передача от протокола IP протоколу ARP примерно такого сообщения: «Какой МАС-адрес имеет интерфейс с адресом IP1»</h2></li>
+<li style="direction:ltr;"><h2><b>2. Работа протокола ARP </b>начинается с просмотра собственной ARP-таблицы. Предположим, что среди содержащихся в ней записей отсутствует запрашиваемый IP-адрес.</h2></li>
+<li style="direction:ltr;"><h2><b>3. В этом случае </b>исходящий IP-пакет, для которого оказалось невозможным определить локальный адрес из ARP-таблицы, запоминается в буфере, а протокол ARP формирует ARP-запрос, вкладывает его в кадр протокола Ethernet и широковещательно рассылает.</h2></li>
+<li style="direction:ltr;"><h2><b>4. Все интерфейсы сети Ethernetl </b>получают ARP-запрос и направляют его «своему» протоколу ARP. </h2></li>
+<li style="direction:ltr;"><h2>ARP сравнивает указанный в запросе адрес IPi с IP-адресом интерфейса, на который поступил этот запрос. Протокол ARP, который констатировал совпадение (в данном случае это ARP маршрутизатора 1), формирует ARP-ответ.</h2></li>
+</ul></body>
+</html>

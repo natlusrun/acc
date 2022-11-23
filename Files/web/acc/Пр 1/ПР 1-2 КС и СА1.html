@@ -1,0 +1,1029 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1251">
+	<TITLE>Практическая работа 1 </TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.13  (Win32)">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGED" CONTENT="20221119;18580096">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 21cm 29.7cm; margin-right: 1.5cm; margin-top: 2cm; margin-bottom: 2cm }
+		P {text-indent: -0.02cm; margin-bottom: 0.21cm; direction: ltr; color: #000000; line-height: 103%; widows: 2; orphans: 2 }
+		P.western { font-family: "Times New Roman", serif; font-size: 12pt }
+		P.cjk { font-family: "Times New Roman"; font-size: 12pt; so-language: ru-RU }
+		P.ctl { font-family: "Times New Roman" }
+		img{text-align: center;}
+		table{text-align: center; margin-left: 420px;}
+		H2 {text-indent: -0.02cm; margin-bottom: 0cm; direction: ltr; color: #000000; line-height: 103%; page-break-inside: avoid; widows: 2; orphans: 2; page-break-after: avoid }
+		H2.western { font-family: "Times New Roman", sans-serif; font-size: 14pt; font-weight: bold }
+		H2.cjk { font-family: "Times New Roman"; font-size: 14pt; so-language: ru-RU; font-weight: bold }
+		H2.ctl { font-family: "Times New Roman"; font-size: 14pt }
+		H1 {text-indent: -0.02cm; margin-bottom: 0cm; direction: ltr; color: #000000; line-height: 103%; page-break-inside: avoid; widows: 2; orphans: 2; page-break-after: avoid }
+		H1.western { font-family: "Times New Roman", sans-serif; font-size: 14pt; font-weight: bold }
+		H1.cjk { font-family: "Times New Roman"; font-size: 14pt; so-language: ru-RU; font-weight: bold }
+		H1.ctl { font-family: "Times New Roman"; font-size: 14pt }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="ru-RU" TEXT="#000000" LINK="#000080" VLINK="#800000" DIR="LTR">
+<H1 CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.43cm; margin-right: 0.42cm">
+Практическая работа 1 
+</H1>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.01cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 107%">
+<FONT SIZE=4><B>Методика расчета конфигурации сети Ethernet</B></FONT><FONT SIZE=5><B>
+</B></FONT><FONT SIZE=4><B> </B></FONT>
+</P>
+<P CLASS="western" STYLE="text-indent: 0cm; margin-bottom: 0.03cm; line-height: 107%">
+ 
+</P>
+<P CLASS="western" STYLE="margin-left: -0.03cm; text-indent: 0cm; margin-bottom: 0.2cm">
+<FONT SIZE=4><I><B>Цель работы:</B></I></FONT><FONT SIZE=4> изучение
+принципов построения сетей по стандарту Ethernet и приобретение
+практических навыков оценки корректности их конфигурации. </FONT>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: -1cm; text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+ <FONT SIZE=4><B>Теоретический материал для выполнения работы</B></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: -0.03cm; text-indent: 1.03cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4><I><B>Технология Ethernet (стандарт IEEE 802.3)</B></I></FONT><FONT SIZE=4><I>
+- э</I></FONT><FONT SIZE=4>то самый распространенный стандарт
+локальных сетей.  Топология Ethernet сетей обычно строится в виде
+&laquo;звезды&raquo;, либо &laquo;шины&raquo;. Средой передачи в
+таких сетях применяются как тонкие, так и толстые </FONT><FONT SIZE=4><I>коаксиальные
+кабеля</I></FONT><FONT SIZE=4>, а также </FONT><FONT SIZE=4><I>витые
+пары и оптоволоконные кабеля</I></FONT><FONT SIZE=4>. Протяженность
+сетей Ethernet обычно колеблется от 100 до 2000 метров. Скорость
+передачи данных в таких сетях обычно около 10 мбит/с. В сетях
+Ethernet обычно используется метод доступа CSMA/CD, относящийся к
+децентрализованным случайным методам доступа к сети. </FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 1.25cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+ <FONT SIZE=4>Стандарт IEEE802.3 в зависимости от типа среды передачи
+данных имеет модификации: </FONT>
+</P>
+<UL>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+	<FONT SIZE=4>10BASE5 (толстый коаксиальный кабель) - обеспечивает
+	скорость передачи данных 10 Мбит/с и длину сегмента до 500м; </FONT>
+	</P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+	<FONT SIZE=4>10BASE2 (тонкий коаксиальный кабель) - обеспечивает
+	скорость передачи данных 10 Мбит/с и длину сегмента до 200м; </FONT>
+	</P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+	<FONT SIZE=4>10BASE-T (неэкранированная витая пара) - позволяет
+	создавать сеть по звездной топологии. Расстояние от концентратора до
+	конечного узла до 100м. Общее количество узлов не должно превышать
+	1024; </FONT>
+	</P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+	<FONT SIZE=4>10BASE-F (оптоволоконный кабель) - позволяет создавать
+	сеть по звездной топологии. </FONT>
+	</P>
+</UL>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: -0.03cm; text-indent: 1.28cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4>Существуют также высокоскоростные варианты сети
+</FONT><FONT SIZE=4><B>Ethernet: IEEE802.3u/Fast Ethernet и
+IEEE802.3z/Gigabit Ethernet</B></FONT><FONT SIZE=4>, обеспечивающие
+скорость передачи данных до 100 мбит/с и до 1000 мбит/с
+соответственно. </FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: 1.25cm; text-indent: 0cm; margin-bottom: 0.24cm; line-height: 107%">
+ <FONT SIZE=4><B>Выполнение работы </B></FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: 0.42cm; text-indent: 0cm; margin-bottom: 0.13cm; line-height: 107%">
+ <FONT SIZE=4><B>Задание 1</B></FONT><FONT SIZE=4>. Изучите принципы
+расчета конфигурации сети </FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: -0.03cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4>Соблюдение многочисленных ограничений, установленных для
+различных стандартов физического уровня сетей Ethernet, гарантирует
+корректную работу сети (естественно, при исправном состоянии всех
+элементов физического уровня). Основные характеристики и ограничения
+технологии Ethernet приведены в таблицах 1 и 2. </FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 1.25cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+ <FONT SIZE=4><B>Таблица 1 - Общие ограничения для всех стандартов
+Ethernet </B></FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 1.25cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+ 
+</P>
+<TABLE WIDTH=684 BORDER=1 BORDERCOLOR="#000001" CELLPADDING=1 CELLSPACING=0 FRAME=VOID RULES=GROUPS>
+	<COLGROUP>
+		<COL WIDTH=14>
+	</COLGROUP>
+	<COLGROUP>
+		<COL WIDTH=404>
+		<COL WIDTH=244>
+	</COLGROUP>
+	<COLGROUP>
+		<COL WIDTH=14>
+	</COLGROUP>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD ROWSPAN=5 WIDTH=14 HEIGHT=18>
+				<P CLASS="western" STYLE="text-indent: 0cm"><BR>
+				</P>
+			</TD>
+			<TD WIDTH=404>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.16cm; text-indent: 0cm">
+				Характеристика 
+				</P>
+			</TD>
+			<TD WIDTH=244>
+				<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.15cm; text-indent: 0cm">
+				Значение 
+				</P>
+			</TD>
+			<TD ROWSPAN=5 WIDTH=14>
+				<P CLASS="western" STYLE="text-indent: 0cm"><BR>
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=404>
+				<P CLASS="western" STYLE="margin-left: 0.02cm; text-indent: 0cm">Номинальная
+				пропускная способность 
+				</P>
+			</TD>
+			<TD WIDTH=244>
+				<P CLASS="western" STYLE="margin-left: 0.02cm; text-indent: 0cm">10
+				Мбит/с 
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=404>
+				<P CLASS="western" STYLE="margin-left: 0.02cm; text-indent: 0cm">Максимальное
+				число станций в сети 
+				</P>
+			</TD>
+			<TD WIDTH=244>
+				<P CLASS="western" STYLE="margin-left: 0.02cm; text-indent: 0cm">1024
+								</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=404>
+				<P CLASS="western" STYLE="margin-left: 0.02cm; text-indent: 0cm">Максимальное
+				расстояние между узлами в сети 
+				</P>
+			</TD>
+			<TD WIDTH=244>
+				<P CLASS="western" STYLE="margin-left: 0.02cm; text-indent: 0cm">2500
+				м (в 10Base-FB -2750 м) 
+				</P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=404>
+				<P CLASS="western" STYLE="margin-left: 0.02cm; text-indent: 0cm">Максимальное
+				число коаксиальных сегментов в сети 
+				</P>
+			</TD>
+			<TD WIDTH=244>
+				<P CLASS="western" STYLE="margin-left: 0.02cm; text-indent: 0cm">5
+								</P>
+			</TD>
+		</TR>
+	</TBODY>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD COLSPAN=2 WIDTH=420 HEIGHT=17 BGCOLOR="#ffffff">
+				<P CLASS="western" STYLE="text-indent: 0cm"> 
+				</P>
+			</TD>
+			<TD COLSPAN=2 WIDTH=260 BGCOLOR="#ffffff">
+				<P CLASS="western" STYLE="text-indent: 0cm"><BR>
+				</P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<P CLASS="western" ALIGN=CENTER STYLE="text-indent: 0cm; margin-bottom: 0cm; line-height: 107%">
+<FONT SIZE=4><B>Таблица 2 - Параметры спецификаций физического уровня
+для стандарта Ethernet</B></FONT></P>
+<TABLE WIDTH=662 BORDER=1 BORDERCOLOR="#000001" CELLPADDING=1 CELLSPACING=0>
+	<COL WIDTH=199>
+	<COL WIDTH=101>
+	<COL WIDTH=101>
+	<COL WIDTH=131>
+	<COL WIDTH=117>
+	<TR VALIGN=TOP>
+		<TD WIDTH=199 HEIGHT=17>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.07cm; text-indent: 0cm">
+			Параметр 
+			</P>
+		</TD>
+		<TD WIDTH=101>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.08cm; text-indent: 0cm">
+			10Base-5 
+			</P>
+		</TD>
+		<TD WIDTH=101>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.07cm; text-indent: 0cm">
+			10Base-2 
+			</P>
+		</TD>
+		<TD WIDTH=131>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.07cm; text-indent: 0cm">
+			10Вазе-Т 
+			</P>
+		</TD>
+		<TD WIDTH=117>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.06cm; text-indent: 0cm">
+			10Base - F 
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=199 HEIGHT=73>
+			<P CLASS="western" STYLE="text-indent: 0cm">Кабель 
+			</P>
+		</TD>
+		<TD WIDTH=101>
+			<P CLASS="western" ALIGN=CENTER STYLE="text-indent: 0cm; margin-bottom: 0cm">
+			Толстый коаксиальный 
+			</P>
+			<P CLASS="western" ALIGN=CENTER STYLE="text-indent: 0cm">кабель
+			RG-8 или RG-11 
+			</P>
+		</TD>
+		<TD WIDTH=101>
+			<P CLASS="western" ALIGN=CENTER STYLE="text-indent: 0cm">Тонкий
+			коаксиальный кабель RG-58 
+			</P>
+		</TD>
+		<TD WIDTH=131>
+			<P CLASS="western" ALIGN=CENTER STYLE="text-indent: 0cm; margin-bottom: 0cm">
+			Неэкранированная витая 
+			</P>
+			<P CLASS="western" ALIGN=CENTER STYLE="text-indent: 0cm">пара
+			категорий 3,4,5 
+			</P>
+		</TD>
+		<TD WIDTH=117>
+			<P CLASS="western" ALIGN=CENTER STYLE="text-indent: 0cm; margin-bottom: 0cm">
+			Многомодовый волоконно-</P>
+			<P CLASS="western" ALIGN=CENTER STYLE="text-indent: 0cm">оптический
+			кабель 
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=199 HEIGHT=18>
+			<P CLASS="western" STYLE="text-indent: 0cm">Максимальная длина
+			сегмента, м 
+			</P>
+		</TD>
+		<TD WIDTH=101>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.07cm; text-indent: 0cm">
+			500 
+			</P>
+		</TD>
+		<TD WIDTH=101>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.07cm; text-indent: 0cm">
+			185 
+			</P>
+		</TD>
+		<TD WIDTH=131>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.07cm; text-indent: 0cm">
+			100 
+			</P>
+		</TD>
+		<TD WIDTH=117>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.06cm; text-indent: 0cm">
+			2000 
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=199 HEIGHT=54>
+			<P CLASS="western" STYLE="text-indent: 0cm">Максимальное
+			расстояние между узлами сети (при использовании повторителей), м 
+			</P>
+		</TD>
+		<TD WIDTH=101>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.07cm; text-indent: 0cm">
+			2500 
+			</P>
+		</TD>
+		<TD WIDTH=101>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.07cm; text-indent: 0cm">
+			925 
+			</P>
+		</TD>
+		<TD WIDTH=131>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.07cm; text-indent: 0cm">
+			500 
+			</P>
+		</TD>
+		<TD WIDTH=117>
+			<P CLASS="western" ALIGN=CENTER STYLE="text-indent: 0cm">2500(2740
+			для10Base-FB) 
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=199 HEIGHT=36>
+			<P CLASS="western" STYLE="text-indent: 0cm">Максимальное число
+			станций в сегменте 
+			</P>
+		</TD>
+		<TD WIDTH=101>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.07cm; text-indent: 0cm">
+			100 
+			</P>
+		</TD>
+		<TD WIDTH=101>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.07cm; text-indent: 0cm">
+			30 
+			</P>
+		</TD>
+		<TD WIDTH=131>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.07cm; text-indent: 0cm">
+			1024 
+			</P>
+		</TD>
+		<TD WIDTH=117>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.06cm; text-indent: 0cm">
+			1024 
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=199 HEIGHT=54>
+			<P CLASS="western" STYLE="text-indent: 0cm">Максимальное число
+			повторителей между любыми станциями сети 
+			</P>
+		</TD>
+		<TD WIDTH=101>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.07cm; text-indent: 0cm">
+			4 
+			</P>
+		</TD>
+		<TD WIDTH=101>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.07cm; text-indent: 0cm">
+			4 
+			</P>
+		</TD>
+		<TD WIDTH=131>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.07cm; text-indent: 0cm">
+			4 
+			</P>
+		</TD>
+		<TD WIDTH=117>
+			<P CLASS="western" ALIGN=CENTER STYLE="text-indent: 0cm">4 (5 для
+			10BaseFB) 
+			</P>
+		</TD>
+	</TR>
+</TABLE>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: -0.03cm; text-indent: 1.03cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4>Наиболее часто приходится проверять ограничения,
+связанные с длиной отдельного сегмента кабеля, а также количеством
+повторителей и общей длиной сети. </FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: -0.03cm; text-indent: 1.25cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4>Правила &laquo;5-4-3&raquo; </FONT><FONT SIZE=4><I>(допускается
+соединение в линию до 5 сегментов не более чем через 4 повторителя,
+из этих сегментов только 3 могут использоваться для подключения узлов
+(Trunk segments), остальные (Link segments)</I></FONT><FONT SIZE=4>
+используются как удлинители) для коаксиальных сетей и &laquo;4 хабов&raquo;
+</FONT><FONT SIZE=4><I>(число повторителей (концентраторов) между
+любыми двумя компьютерами в сети Ethernet не может быть больше
+четырех)</I></FONT><FONT SIZE=4> для сетей на основе витой пары и
+оптоволокна не только дают гарантии работоспособности сети, но и
+оставляют большой &laquo;запас прочности&raquo; сети.  </FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+ 
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: -0.03cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4><B>Задание 2</B></FONT><FONT SIZE=4>. Изучите методику
+расчета конфигурации сети Ethernet и ответьте на вопросы: </FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 1.25cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4>2.1 Что включает в себя методика расчета сети Ethernet? </FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 1.25cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4>2.2 Перечислите условия корректности работы сети
+Ethernet. </FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+ 
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0cm; text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4>Для того чтобы сеть Ethernet, состоящая из сегментов
+различной физической природы, работала корректно, необходимо, чтобы
+выполнялись три основных условия: </FONT>
+</P>
+<UL>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+	<FONT SIZE=4>Количество станций в сети не превышает 1024 (с учетом
+	ограничений для коаксиальных сегментов). </FONT>
+	</P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+	<FONT SIZE=4>Удвоенная задержка распространения сигнала (Path Delay
+	Value, PDV) между двумя самыми удаленными друг от друга станциями
+	сети не превышает 575 битовых интервалов. </FONT>
+	</P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+	<FONT SIZE=4>Сокращение межкадрового расстояния (Interpacket Gap
+	Shrinkage) при прохождении последовательности кадров через все
+	повторители не более, чем на 49 битовых интервалов (напомним, что
+	при отправке кадров станция обеспечивает начальное межкадровое
+	расстояние в 96 битовых интервалов). </FONT>
+	</P>
+</UL>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0cm; text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4>Соблюдение этих требований обеспечивает корректность
+работы сети даже в случаях, когда нарушаются простые правила
+конфигурирования, определяющие максимальное количество повторителей и
+максимальную длину сегментов каждого типа. </FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: 0cm; text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4>Требование на минимальное межкадровое расстояние связано
+с тем, что при прохождении кадра через повторитель это расстояние
+уменьшается. Каждый пакет, принимаемый повторителем,
+ресинхронизируется для исключения дрожания сигналов, накопленного при
+прохождении последовательности импульсов по кабелю и через
+интерфейсные схемы. Процесс ресинхронизации обычно увеличивает длину
+преамбулы, что уменьшает межкадровый интервал. При прохождении кадров
+через несколько повторителей межкадровый интервал может уменьшиться
+настолько, что сетевым адаптерам в последнем сегменте не хватит
+времени на обработку предыдущего кадра, в результате чего кадр будет
+просто потерян. Поэтому не допускается суммарное уменьшение
+межкадрового интервала более чем на 49 битовых интервалов. Величину
+уменьшения межкадрового расстояния при переходе между соседними
+сегментами обычно называют в англоязычной литературе Segment
+Variability Value, SVV, а суммарную величину уменьшения межкадрового
+интервала при прохождении всех повторителей - Path Variability Value,
+PVV. Очевидно, что величина PVV равна сумме SVV всех сегментов, кроме
+последнего. </FONT>
+</P>
+<H2 CLASS="western" ALIGN=CENTER STYLE="margin-left: 0cm; text-indent: 1cm; line-height: 100%">
+<I>Расчет PDV</I></H2>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: -0.03cm; text-indent: 1cm; margin-bottom: 0.2cm">
+<FONT SIZE=4>Для упрощения расчетов обычно используются справочные
+данные, содержащие значения задержек распространения сигналов в
+повторителях, приемопередатчиках и в различных физических средах. В
+таблице 1 приведены данные, необходимые для расчета значения PDV для
+всех физических стандартов сетей Ethernet, взятые из справочника
+Technical Reference Pocket Guide (Volume 4, Number 4) компании Bay
+Networks. </FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: -0.03cm; text-indent: 1cm; margin-bottom: 0.2cm">
+<FONT SIZE=4><I>Таблица 1.</I></FONT><FONT SIZE=4> </FONT>
+</P>
+<TABLE WIDTH=684 BORDER=1 BORDERCOLOR="#000001" CELLPADDING=1 CELLSPACING=0 FRAME=VOID RULES=COLS>
+	<COL WIDTH=56>
+	<COL WIDTH=91>
+	<COL WIDTH=73>
+	<COL WIDTH=128>
+	<COL WIDTH=74>
+	<COL WIDTH=77>
+	<COL WIDTH=113>
+	<COL WIDTH=56>
+	<TR VALIGN=TOP>
+		<TD ROWSPAN=8 WIDTH=56 HEIGHT=54>
+			<P CLASS="western" STYLE="text-indent: 0cm"><BR>
+			</P>
+		</TD>
+		<TD WIDTH=91>
+			<P CLASS="western" ALIGN=CENTER STYLE="text-indent: 0cm">Тип
+			сегмента 
+			</P>
+		</TD>
+		<TD WIDTH=73>
+			<P CLASS="western" ALIGN=CENTER STYLE="text-indent: 0cm">База
+			левого сегмента 
+			</P>
+		</TD>
+		<TD WIDTH=128>
+			<P CLASS="western" ALIGN=CENTER STYLE="text-indent: 0cm">База
+			промежуточного сегмента 
+			</P>
+		</TD>
+		<TD WIDTH=74>
+			<P CLASS="western" ALIGN=CENTER STYLE="text-indent: 0.03cm">База
+			правого сегмента 
+			</P>
+		</TD>
+		<TD WIDTH=77>
+			<P CLASS="western" ALIGN=CENTER STYLE="text-indent: 0cm; margin-bottom: 0.07cm">
+			Задержка среды на 
+			</P>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			1 м 
+			</P>
+		</TD>
+		<TD WIDTH=113>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.04cm; margin-right: 0.08cm; text-indent: -0.04cm">
+			Максимальная длина сегмента 
+			</P>
+		</TD>
+		<TD ROWSPAN=8 WIDTH=56>
+			<P CLASS="western" STYLE="text-indent: 0cm"><BR>
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=91>
+			<P CLASS="western" STYLE="text-indent: 0cm">10Base-5 
+			</P>
+		</TD>
+		<TD WIDTH=73>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			11.8 
+			</P>
+		</TD>
+		<TD WIDTH=128>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			46.5 
+			</P>
+		</TD>
+		<TD WIDTH=74>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.2cm; text-indent: 0cm">
+			169.5 
+			</P>
+		</TD>
+		<TD WIDTH=77>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			0.0866 
+			</P>
+		</TD>
+		<TD WIDTH=113>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			500 
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=91>
+			<P CLASS="western" STYLE="text-indent: 0cm">10Base-2 
+			</P>
+		</TD>
+		<TD WIDTH=73>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			11.8 
+			</P>
+		</TD>
+		<TD WIDTH=128>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			46.5 
+			</P>
+		</TD>
+		<TD WIDTH=74>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.2cm; text-indent: 0cm">
+			169.5 
+			</P>
+		</TD>
+		<TD WIDTH=77>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			0.1026 
+			</P>
+		</TD>
+		<TD WIDTH=113>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			185 
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=91>
+			<P CLASS="western" STYLE="text-indent: 0cm">10Base-T 
+			</P>
+		</TD>
+		<TD WIDTH=73>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			15.3 
+			</P>
+		</TD>
+		<TD WIDTH=128>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			42.0 
+			</P>
+		</TD>
+		<TD WIDTH=74>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.2cm; text-indent: 0cm">
+			165.0 
+			</P>
+		</TD>
+		<TD WIDTH=77>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			0.113 
+			</P>
+		</TD>
+		<TD WIDTH=113>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			100 
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=91>
+			<P CLASS="western" STYLE="text-indent: 0cm">10Base-FB 
+			</P>
+		</TD>
+		<TD WIDTH=73>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.18cm; text-indent: 0cm">
+			- 
+			</P>
+		</TD>
+		<TD WIDTH=128>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			24.0 
+			</P>
+		</TD>
+		<TD WIDTH=74>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.2cm; text-indent: 0cm">
+			- 
+			</P>
+		</TD>
+		<TD WIDTH=77>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			0.1 
+			</P>
+		</TD>
+		<TD WIDTH=113>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			2000 
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=91>
+			<P CLASS="western" STYLE="text-indent: 0cm">10Base-FL 
+			</P>
+		</TD>
+		<TD WIDTH=73>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			12.3 
+			</P>
+		</TD>
+		<TD WIDTH=128>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			33.5 
+			</P>
+		</TD>
+		<TD WIDTH=74>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.2cm; text-indent: 0cm">
+			156.5 
+			</P>
+		</TD>
+		<TD WIDTH=77>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			0.1 
+			</P>
+		</TD>
+		<TD WIDTH=113>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			2000 
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=91>
+			<P CLASS="western" STYLE="text-indent: 0cm">FOIRL 
+			</P>
+		</TD>
+		<TD WIDTH=73>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			7.8 
+			</P>
+		</TD>
+		<TD WIDTH=128>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			29.0 
+			</P>
+		</TD>
+		<TD WIDTH=74>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.2cm; text-indent: 0cm">
+			152.0 
+			</P>
+		</TD>
+		<TD WIDTH=77>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			0.1 
+			</P>
+		</TD>
+		<TD WIDTH=113>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			1000 
+			</P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=91>
+			<P CLASS="western" STYLE="text-indent: 0cm">AUI (&gt; 2 м) 
+			</P>
+		</TD>
+		<TD WIDTH=73>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			0 
+			</P>
+		</TD>
+		<TD WIDTH=128>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			0 
+			</P>
+		</TD>
+		<TD WIDTH=74>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			0 
+			</P>
+		</TD>
+		<TD WIDTH=77>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			0.1026 
+			</P>
+		</TD>
+		<TD WIDTH=113>
+			<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 0.19cm; text-indent: 0cm">
+			2+48 
+			</P>
+		</TD>
+	</TR>
+	<TR>
+		<TD COLSPAN=8 WIDTH=682 HEIGHT=17 VALIGN=TOP BGCOLOR="#ffffff">
+			<P CLASS="western" STYLE="margin-left: -0.03cm; text-indent: 0cm; margin-bottom: 0.2cm">
+			<FONT SIZE=4>Поясним терминологию, использованную в этой таблице,
+			на примере сети, изображенной на рисунке 1. </FONT>
+			</P>
+			<P CLASS="western" STYLE="margin-left: -0.13cm; margin-right: 0.06cm; text-indent: 0cm">
+			<BR>
+			</P>
+		</TD>
+	</TR>
+</TABLE>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-right: 2.46cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 107%">
+<IMG SRC="%D0%9F%D0%A0%201-2%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%901_html_4a87c2d8.jpg" ALIGN=BOTTOM WIDTH=439 HEIGHT=393 BORDER=0></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 5.82cm; margin-right: 1.41cm; text-indent: -1.19cm; margin-bottom: 0.2cm; line-height: 112%">
+<BR><BR>
+</P>
+<P CLASS="western" STYLE="margin-left: 4.63cm; margin-right: 1.41cm; text-indent: 0cm; margin-bottom: 0.2cm; line-height: 112%">
+<FONT SIZE=4><I><B>Рис. 1. Пример сети Ethernet, состоящей из
+сегментов различных физических стандартов</B></I></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: -0.03cm; text-indent: 1.03cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4>Левым сегментом называется сегмент, в котором начинается
+путь сигнала от выхода передатчика (выход Tx) конечного узла. Затем
+сигнал проходит через промежуточные сегменты и доходит до приемника
+(вход Rx) наиболее удаленного узла наиболее удаленного сегмента,
+который называется правым.</FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: -0.03cm; text-indent: 1.03cm; margin-bottom: 0cm; line-height: 100%">
+ <FONT SIZE=4>С каждым сегментом связана постоянная задержка,
+названная базой, которая зависит только от типа сегмента и от
+положения сегмента на пути сигнала (левый, промежуточный или правый).
+Кроме этого, с каждым сегментом связана задержка распространения
+сигнала вдоль кабеля сегмента, которая зависит от длины сегмента и
+вычисляется путем умножения времени распространения сигнала по одному
+метру кабеля (в битовых интервалах) на длину кабеля в метрах. </FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: -0.03cm; text-indent: 1.03cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4>Общее значение PDV равно сумме базовых и переменных
+задержек всех сегментов сети. Значения констант в таблице даны с
+учетом удвоения величины задержки при круговом обходе сети сигналом,
+поэтому удваивать полученную сумму не нужно. </FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-left: -0.03cm; text-indent: 1.03cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4>Так как левый и правый сегмент имеют различные величины
+базовой задержки, то в случае различных типов сегментов на удаленных
+краях сети необходимо выполнить расчеты дважды: один раз принять в
+качестве левого сегмента сегмент одного типа, а во второй раз -
+сегмент другого типа, а результатом считать максимальное значение
+PDV. В нашем примере крайние сегменты сети принадлежат к одному типу
+- стандарту 10Base-T, поэтому двойной расчет не требуется, но если бы
+они были сегментами разного типа, то в первом случае нужно было бы
+принять в качестве левого сегмент между станцией и концентратором 1,
+а во втором считать левым сегмент между станцией и концентратором 5. </FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: 1.25cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4>Рассчитаем значение PDV для нашего примера. </FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: 1.25cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4><B>Левый сегмент 1: </B></FONT><FONT SIZE=4>15.3 (база)
++ 100 м ґ 0.113 /м = 26.6 </FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: 1.25cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4><B>Промежуточный сегмент 2:</B></FONT><FONT SIZE=4> 33.5
++ 1000 ґ 0.1 = 133.5 </FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: 1.24cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4><B>Промежуточный сегмент 3:</B></FONT><FONT SIZE=4> 24 +
+500 ґ 0.1 = 74.0 </FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: 1.24cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4><B>Промежуточный сегмент 4: </B></FONT><FONT SIZE=4>24 +
+500 ґ 0.1 = 74.0 </FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: 1.24cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4><B>Промежуточный сегмент 5:</B></FONT><FONT SIZE=4> 24 +
+600 ґ 0.1 = 84.0 </FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: 1.25cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4><B>Правый сегмент 6: </B></FONT><FONT SIZE=4>165 + 100 ґ
+0.113 = 176.3 </FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: 1.25cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4>Сумма всех составляющих дает значение PDV, равное 568.4.
+</FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: -0.03cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4>Так как значение PDV меньше максимально допустимой
+величины 575, то эта сеть проходит по величине максимально возможной
+задержки оборота сигнала. Несмотря на то, что ее общая длина больше
+2500 метров. </FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: 1.25cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+ 
+</P>
+<H2 CLASS="western" ALIGN=CENTER STYLE="margin-left: 1.24cm; line-height: 100%">
+<I>Расчет PVV</I></H2>
+<P CLASS="western" STYLE="margin-left: -0.03cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4>Для расчета PVV также можно воспользоваться табличными
+значениями максимальных величин уменьшения межкадрового интервала при
+прохождении повторителей различных физических сред (таблица 2 взята
+из того же справочника, что и предыдущая). </FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: 1.25cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4><I>Таблица 2.</I></FONT><FONT SIZE=4>  </FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: -0.03cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4>В соответствии с этими данными рассчитаем значение PVV
+для нашего примера. </FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: 1.25cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4><B>Левый сегмент 1 10Base-T:</B></FONT><FONT SIZE=4>
+дает сокращение в 10.5 битовых интервалов </FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: 1.24cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4><B>Промежуточный сегмент 2 10Base-FL:</B></FONT><FONT SIZE=4>
+8 </FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: 1.24cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4><B>Промежуточный сегмент 3 10Base-FB:</B></FONT><FONT SIZE=4>
+2 </FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: 1.24cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4><B>Промежуточный сегмент 4 10Base-FB:</B></FONT><FONT SIZE=4>
+2 </FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: 1.24cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4><B>Промежуточный сегмент 5 10Base-FB:</B></FONT><FONT SIZE=4>
+2 </FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: -0.03cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4>Сумма этих величин дает значение PVV, равное 24.5, что
+меньше предельного значения в 49 битовых интервалов. </FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: -0.03cm; margin-bottom: 0.2cm">
+<FONT SIZE=4>В результате, приведенная в примере сеть по всем
+параметрам соответствует стандартам Ethernet. </FONT>
+</P>
+<P CLASS="western" STYLE="text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+ <FONT SIZE=4><B>Задание 3</B></FONT><FONT SIZE=4>. </FONT><FONT COLOR="#424242"><FONT SIZE=4>Произвести
+оценку конфигурации сети в соответствии с вариантом: </FONT></FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: 0cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4>3.1Перечертите схему своего варианта и занесите на нее
+свои значения. </FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: -0.03cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4>3.2 Выполнить расчет по физическим ограничениям: на
+длину сегмента, на длину сети, правило &laquo;4 хаба&raquo; (&laquo;5
+хабов&raquo; для 10Base-FB). </FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: 0cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<FONT SIZE=4>3.3 Выполнить расчет удвоенной задержки распространения
+сигнала. </FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: -0.03cm; margin-bottom: 0.2cm">
+<FONT SIZE=4>3.4 Выполнить расчет суммарной величины уменьшения
+межкадрового интервала при прохождении всех повторителей. </FONT>
+</P>
+<P CLASS="western" STYLE="margin-left: -0.03cm; margin-bottom: 0.2cm">
+<FONT SIZE=4>3.5</FONT><FONT COLOR="#424242"><FONT SIZE=4> </FONT></FONT><FONT SIZE=4>По
+результатам расчетов сделать выводы о корректности конфигурации сети
+Ethernet, о работоспособности сети. </FONT>
+</P>
+<H2 CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.52cm">ВАРИАНТЫ
+ЗАДАНИЙ</H2>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.02cm; margin-right: 0cm; margin-bottom: 0cm; line-height: 107%">
+<FONT COLOR="#424242"><FONT SIZE=4><B>Вариант 1</B></FONT></FONT></P>
+<center>
+<IMG SRC="%D0%9F%D0%A0%201-2%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%901_html_7d596978.jpg" NAME="Графический объект1" ALIGN=BOTTOM WIDTH=587 HEIGHT=498 BORDER=0><FONT COLOR="#424242"></center>
+</FONT>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.02cm; margin-right: 0cm; margin-bottom: 0.43cm; line-height: 107%">
+<BR><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.02cm; margin-right: 0cm; margin-bottom: 0.43cm; line-height: 107%">
+<BR><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.02cm; margin-right: 0cm; margin-bottom: 0.43cm; line-height: 107%">
+<BR><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.02cm; margin-right: 0cm; margin-bottom: 0.43cm; line-height: 107%">
+<BR><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.02cm; margin-right: 0cm; margin-bottom: 0.43cm; line-height: 107%">
+<BR><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.02cm; margin-right: 0cm; margin-bottom: 0.43cm; line-height: 107%">
+<BR><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.02cm; margin-right: 0cm; margin-bottom: 0.43cm; line-height: 107%">
+<BR><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.02cm; margin-right: 0cm; margin-bottom: 0.43cm; line-height: 107%">
+<BR><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.02cm; margin-right: 0cm; margin-bottom: 0.43cm; line-height: 107%">
+<BR><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.02cm; margin-right: 0cm; margin-bottom: 0.43cm; line-height: 107%">
+<FONT COLOR="#424242"><FONT SIZE=4><B>Вариант 2 </B></FONT></FONT>
+</P>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-right: 1.1cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 107%">
+	<center>
+<IMG SRC="%D0%9F%D0%A0%201-2%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%901_html_m215c83d8.jpg" NAME="Графический объект2" ALIGN=BOTTOM WIDTH=589 HEIGHT=444 BORDER=0><FONT COLOR="#424242"></center>
+</FONT>
+</P>
+<H2 CLASS="western" STYLE="margin-left: 8.04cm">Вариант 3 
+</H2>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-right: 1.46cm; text-indent: 0cm; margin-bottom: 0.43cm; line-height: 107%">
+	<center>
+<IMG SRC="%D0%9F%D0%A0%201-2%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%901_html_m77afe8aa.jpg" NAME="Графический объект3" ALIGN=BOTTOM WIDTH=562 HEIGHT=469 BORDER=0><FONT COLOR="#424242"></center>
+</FONT>
+</P>
+<H2 CLASS="western" STYLE="margin-left: 7.99cm"> Вариант 4<SPAN STYLE="font-weight: normal">
+</SPAN>
+</H2>
+<P CLASS="western" ALIGN=RIGHT STYLE="margin-right: 1.51cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 107%">
+<center> 
+<IMG SRC="%D0%9F%D0%A0%201-2%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%901_html_m4b3a06a0.jpg" NAME="Графический объект4" ALIGN=BOTTOM WIDTH=559 HEIGHT=505 BORDER=0></center>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.05cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.05cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.05cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.05cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.05cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.05cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.05cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.05cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.05cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.05cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.05cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.05cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.05cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.05cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.05cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.05cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.05cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.05cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.05cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-left: 0.05cm; text-indent: 0cm; margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+</BODY>
+</HTML>

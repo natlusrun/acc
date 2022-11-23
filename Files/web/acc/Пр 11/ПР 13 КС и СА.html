@@ -1,0 +1,559 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1251">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.13  (Win32)">
+	<META NAME="AUTHOR" CONTENT="Viny.63">
+	<META NAME="CREATED" CONTENT="20200328;8000000">
+	<META NAME="CHANGEDBY" CONTENT="Viny.63">
+	<META NAME="CHANGED" CONTENT="20201002;15000000">
+	<META NAME="AppVersion" CONTENT="16.0000">
+	<META NAME="DocSecurity" CONTENT="0">
+	<META NAME="HyperlinksChanged" CONTENT="false">
+	<META NAME="LinksUpToDate" CONTENT="false">
+	<META NAME="ScaleCrop" CONTENT="false">
+	<META NAME="ShareDoc" CONTENT="false">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 21cm 29.7cm; margin-right: 1.5cm; margin-top: 2cm; margin-bottom: 2cm }
+		* {margin-left: 0;}
+		font{font-size: 20px; line-height: 103%; widows: 2; orphans: 2}
+		img {text-align: center;}
+		table {text-align: center; margin-left: 420px;}
+		P { text-indent: -0.02cm; margin-bottom: 0.21cm; direction: ltr; color: #000000; line-height: 103%; widows: 2; orphans: 2 }
+		P.western { font-family: "Times New Roman", serif; font-size: 20px }
+		P.cjk { font-family: "Times New Roman"; font-size: 20px; so-language: ru-RU }
+		P.ctl { font-family: "Times New Roman" }
+		H2 {text-indent: -0.02cm; margin-bottom: 0cm; direction: ltr; color: #000000; line-height: 103%; page-break-inside: avoid; widows: 2; orphans: 2; page-break-after: avoid }
+		H2.western { font-family: "Times New Roman", sans-serif; font-size: 20px; font-weight: bold }
+		H2.cjk { font-family: "Times New Roman"; font-size: 20px; so-language: ru-RU; font-weight: bold }
+		H2.ctl { font-family: "Times New Roman"; font-size: 20px }
+		H3 {text-indent: -0.02cm; margin-bottom: 0.17cm; direction: ltr; color: #000000; line-height: 103%; page-break-inside: avoid; widows: 2; orphans: 2; page-break-after: avoid }
+		H3.western { font-family: "Cambria", sans-serif; font-size: 20px; font-weight: bold }
+		H3.cjk { font-family: "Cambria"; font-size: 20px; so-language: ru-RU; font-weight: bold }
+		H3.ctl { font-family: "Cambria"; font-size: 20px }
+		H4 {text-indent: -0.02cm; margin-bottom: 0.2cm; direction: ltr; color: #000000; line-height: 103%; page-break-inside: avoid; widows: 2; orphans: 2; page-break-after: avoid }
+		H4.western { font-family: "Cambria", sans-serif; font-size: 20px; font-weight: bold }
+		H4.cjk { font-family: "Cambria"; font-size: 20px; so-language: ru-RU; font-weight: bold }
+		H4.ctl { font-family: "Cambria"; font-size: 20px }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="ru-RU" TEXT="#000000" LINK="#000080" VLINK="#800000" DIR="LTR">
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>Практическое
+работа 13</B></FONT></FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>Протокол RAS</B></FONT></FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>Цель</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>
+</FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>
+практической работы:</B></FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4>Ознакомление с
+семейством протоколов сигнализации Н.323, сообщениями протокола RAS,
+сценариями установления соединения между терминалами и другими
+элементами сети Н.323.</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>Задание к
+практической работе:</B></FONT></FONT></P>
+<UL>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+	<FONT FACE="Times New Roman, serif"><FONT SIZE=4>семейство
+	протоколов сигнализации Н.323, </FONT></FONT>
+	</P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+	<FONT FACE="Times New Roman, serif"><FONT SIZE=4>сообщения протокола
+	RAS, </FONT></FONT>
+	</P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+	<FONT FACE="Times New Roman, serif"><FONT SIZE=4>сценарии
+	установления соединения между элементами сети Н.323.</FONT></FONT></P>
+</UL>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4>Таблица 1. Варианты
+заданий.</FONT></FONT></P>
+<TABLE WIDTH=632 BORDER=1 BORDERCOLOR="#00000a" CELLPADDING=7 CELLSPACING=0>
+	<COL WIDTH=155>
+	<COL WIDTH=447>
+	<TR>
+		<TD WIDTH=155>
+			<P CLASS="western" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>Вариант</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=447>
+			<P CLASS="western" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>Задание</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=155>
+			<P CLASS="western" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>1,
+			7, 13,19</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=447>
+			<P CLASS="western" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>терминал-шлюз</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=155>
+			<P CLASS="western" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>2,
+			8,14,20</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=447>
+			<P CLASS="western" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>терминал-MCU</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=155>
+			<P CLASS="western" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>3,
+			9,15,21</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=447>
+			<P CLASS="western" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>терминал-
+			терминал</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=155>
+			<P CLASS="western" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>4,
+			10, 16,22</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=447>
+			<P CLASS="western" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>шлюз
+			- терминал</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=155>
+			<P CLASS="western" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>5,
+			11, 17,23</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=447>
+			<P CLASS="western" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>MCU
+			- терминал</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=155>
+			<P CLASS="western" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>6,12,
+			18,24</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=447>
+			<P CLASS="western" ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>шлюз
+			&ndash; шлюз</FONT></FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4><BR></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>Порядок
+выполнения практической  работы</B></FONT></FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0cm; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><BR></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>1.
+Изучить методические указания к данному практическому занятию.<BR>2.
+Получить у преподавателя задание<BR>3. Выполнить практическую
+часть<BR>4. Ответить на контрольные вопросы.<BR></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>СОДЕРЖАНИЕ
+ОТЧЕТА</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4><BR>1.
+Описание сообщений протокола RAS<BR>2. Cценарий установления
+соединения между терминалами.<BR>3. Типовой сценарий установления
+соединения без привратника<BR>4. Сценарий установления соединения
+шлюзом с привратником<BR></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>КОНТРОЛЬНЫЕ
+ВОПРОСЫ</B></FONT></FONT></P>
+<OL>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+	<FONT FACE="Times New Roman, serif"><FONT SIZE=4>Какие основные
+	компоненты описываются рекомендации Н.323? </FONT></FONT>
+	</P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+	<FONT FACE="Times New Roman, serif"><FONT SIZE=4>Что такое зона
+	Н.323?</FONT></FONT></P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+	<FONT FACE="Times New Roman, serif"><FONT SIZE=4>Какие функции
+	выполняют терминал Н.323, контроллер зоны, шлюз, устройство
+	управления многоточечной конференцией?</FONT></FONT></P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+	<FONT FACE="Times New Roman, serif"><FONT SIZE=4>Чем отличаются
+	устройства привратник, gatekeeper, контроллер зоны?</FONT></FONT></P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+	<FONT FACE="Times New Roman, serif"><FONT SIZE=4>Какие функции
+	выполняет шлюз?</FONT></FONT></P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+	<FONT FACE="Times New Roman, serif"><FONT SIZE=4>С какими видами
+	терминалов ТфОП может взаимодействовать сеть Н.323?</FONT></FONT></P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+	<FONT FACE="Times New Roman, serif"><FONT SIZE=4>Какие типы адресов
+	используются в сети IP-телефонии стандарта Н.323?</FONT></FONT></P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+	<FONT FACE="Times New Roman, serif"><FONT SIZE=4>Каким образом
+	стыкуется нумерация в ТфОП с адресацией в IP-сетях?</FONT></FONT></P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+	<FONT FACE="Times New Roman, serif"><FONT SIZE=4>Что обеспечивают
+	протоколы сигнализации?</FONT></FONT></P>
+</OL>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4>10. На какие фазы
+делится процедура установления соединения?</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4>11. Из каких
+протоколов состоит Сигнализация Н.323?</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4>12. Какие функции
+выполняет Сигнальный канал Н.225.0? </FONT></FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4>13. Какие основные
+команды входят в состав сигнального канала Н.225.0</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4>14. Какие функции
+выполняет Управляющий канал H.245?</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4>15. Какие основные
+команды входят в состав Управляющего канала H.245?</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4>16. Какие функции
+выполняет сигнализация RAS?</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4>17. Какие основные
+команды входят в состав сигнализации RAS?</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4>18. В чем отличие
+сценариев с участием и без участия привратника?</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4>19. Какие функции
+выполняет привратник?</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4>20. Какие функции
+выполняет протокол RAS?</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4>21. Зачем необходимы
+сообщения ARQ и ACF, DRQ и DCF?</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3><BR></FONT></FONT><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>Методические
+указания к практической работы</B></FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4><BR>     Семейство
+протоколов Н.323 включает в себя три основных протокола: протокол
+взаимодействия оконечного оборудования с привратником &ndash; RAS,
+протокол управления соединениями &ndash; H.225 и протокол управления
+логическими каналами &ndash; Н.245.</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+      <FONT FACE="Times New Roman, serif"><FONT SIZE=4>ITU-T в
+Рекомендации Н.225.0 определил протокол взаимодействия компонентов
+сети Н.323 &ndash; оконечного оборудования (терминалов, шлюзов,
+устройств управления конференциями) с привратником. Этот протокол
+получил название RAS (Registration, Admission and Status). Основными
+процедурами, выполняемыми оконечным оборудованием и привратником с
+помощью протокола RAS, являются:</FONT></FONT></P>
+<UL>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+	<FONT FACE="Times New Roman, serif"><FONT SIZE=4>Обнаружение
+	привратника.</FONT></FONT></P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+	<FONT FACE="Times New Roman, serif"><FONT SIZE=4>Регистрация
+	оконечного оборудования у привратника.</FONT></FONT></P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+	<FONT FACE="Times New Roman, serif"><FONT SIZE=4>Контроль доступа
+	оконечного оборудования к сетевым ресурсам.</FONT></FONT></P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+	<FONT FACE="Times New Roman, serif"><FONT SIZE=4>Определение
+	местоположения оконечного оборудования в сети.</FONT></FONT></P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+	<FONT FACE="Times New Roman, serif"><FONT SIZE=4>Изменение полосы
+	пропускания в процессе обслуживания вызова.</FONT></FONT></P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+	<FONT FACE="Times New Roman, serif"><FONT SIZE=4>Опрос и индикация
+	текущего состояния оконечного оборудования.</FONT></FONT></P>
+	<LI><P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm; line-height: 100%">
+	<FONT FACE="Times New Roman, serif"><FONT SIZE=4>Оповещение
+	привратника об освобождении полосы пропускания, ранее занимавшейся
+	оборудованием</FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>.</FONT></FONT></P>
+</UL>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+     <FONT FACE="Times New Roman, serif"><FONT SIZE=4>Выполнение
+первых трех процедур, предусмотренных протоколом RAS, является
+начальной фазой установления соединения с использованием сигнализации
+H.323. Далее следуют фаза сигнализации H.225.0 (Q.931) и обмен
+управляющими сообщениями Н.245. Разъединение происходит в обратной
+последовательности: в первую очередь закрывается управляющий канал
+Н.245 и сигнальный канал H.225.0, после чего по каналу RAS привратник
+оповещается об освобождении ранее занимавшейся оконечным
+оборудованием полосы пропускания.</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4>Для переноса
+сообщений протокола RAS используется протокол негарантированной
+доставки информации UDP.</FONT></FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>Обнаружение
+привратника</B></FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+   <FONT FACE="Times New Roman, serif"><FONT SIZE=4>Прежде чем
+устройство станет полноправной частью сети, необходимо сделать так,
+чтобы все остальные устройства увидели нового участника и смогли
+взаимодействовать с ним. Для этого необходимо зарегистрировать
+оборудование на привратнике зоны, в которой будет работать это
+устройство. Нужно, чтобы устройству стал известен сетевой адрес
+подходящего привратника. Процесс определения этого адреса называется
+обнаружением привратника. Определены два способа обнаружения &ndash;
+ручной и автоматический.</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+    <FONT FACE="Times New Roman, serif"><FONT SIZE=4>Ручной способ
+заключается в том, что привратник, обслуживающий определенное
+устройство, определяется заранее при конфигурации этого устройства.
+Первая фаза установления соединения начинается сразу с запроса
+регистрации устройства, который передается на уже известный сетевой
+адрес привратника и на UDP порт 1719, а в случае взаимодействия с
+привратником, поддерживающим первую версию протокола H.323, &ndash;
+на порт 1718.</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+   <FONT FACE="Times New Roman, serif"><FONT SIZE=4>При
+автоматическом способе обнаружения привратника устройство передает
+запрос Gatekeeper Request (GRQ) в режиме многоадресной рассылки
+(multicasting), используя IP-адрес 224.0.1.41 (Gatekeeper UDP
+Discovery Multicast Address) и UDP порт 1718 (Gatekeeper UDP
+Discovery Port). Ответить оконечному оборудованию могут один или
+несколько привратников, передав на адрес, указанный в поле rasAddress
+запроса GRQ, сообщение Gatekeeper Confirmation (GCF) с предложением
+своих услуг и с указанием транспортного адреса канала RAS (рис.6.1).
+Если привратник не имеет возможности зарегистрировать оконечное
+оборудование, он отвечает на запрос сообщением Gatekeeper Reject
+(GRJ).</FONT></FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4><BR></FONT></FONT><IMG SRC="%D0%9F%D0%A0%2013%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_1c5dcc4e.gif" ALIGN=BOTTOM WIDTH=396 HEIGHT=189 BORDER=0><FONT FACE="Times New Roman, serif"><FONT SIZE=3><BR><BR></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>Рисунок
+1 Автоматическое обнаружение привратника<BR></FONT></FONT><BR>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+   <FONT FACE="Times New Roman, serif"><FONT SIZE=4>Если на GRQ
+отвечает несколько привратников, оконечное оборудование может выбрать
+по своему усмотрению любой из них, после чего инициировать процесс
+регистрации. Если в течение 5 секунд ни один привратник не ответит на
+GRQ, оконечное оборудование может повторить запрос. Если ответ опять
+не будет получен, необходимо прибегнуть к ручному способу выбора
+привратника.</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=4>При возникновении
+ошибки в процессе регистрации у своего привратника, т.е. при
+получении отказа в регистрации или при отсутствии ответа на запрос
+регистрации, оконечное оборудование должно провести процедуру
+обнаружения привратника снова.</FONT></FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>Регистрация
+оконечного оборудования</B></FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+   <FONT FACE="Times New Roman, serif"><FONT SIZE=4>Следующим шагом
+после обнаружения привратника оконечное оборудование, будет
+присоединение к зоне сети, обслуживаемой данным привратником. Для
+этого оборудование должно пройти процедуру регистрации. При этом
+привратнику сообщается адресная информация: список alias-адресов и
+транспортных адресов.</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=4>Процесс
+регистрации представлен на рис. 2. Оконечное оборудование передает
+запрос регистрации Registration Request (RRQ) на сетевой адрес
+привратника, либо полученный при выполнении процедуры его
+автоматического обнаружения, либо известный априори. Стоит отметить,
+что запрос направляется на общеизвестный номер UDP порта 1719. Этот
+порт имеет соответствующее название &ndash; Gatekeeper UDP
+Registration and Status Port. </FONT></FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+    <FONT FACE="Times New Roman, serif"><FONT SIZE=4>Привратник
+отвечает на запрос подтверждением Registration Confirmation (RCF) или
+отказом в регистрации Registration Reject (RRJ). Напомним, что
+оконечное оборудование может зарегистрироваться только у одного
+привратника. Он может сам назначить такой адрес и передать его
+оборудованию в сообщении RCF.</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3><BR></FONT></FONT><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 100%">
+<IMG SRC="%D0%9F%D0%A0%2013%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_40c3c927.gif" ALIGN=BOTTOM WIDTH=586 HEIGHT=128 BORDER=0><FONT FACE="Times New Roman, serif"><FONT SIZE=3><BR><BR></FONT></FONT><IMG SRC="%D0%9F%D0%A0%2013%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_m1c142bcb.gif" ALIGN=BOTTOM WIDTH=604 HEIGHT=118 BORDER=0><FONT FACE="Times New Roman, serif"><FONT SIZE=3><BR><BR><BR></FONT></FONT><IMG SRC="%D0%9F%D0%A0%2013%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_m71206237.gif" ALIGN=BOTTOM WIDTH=594 HEIGHT=142 BORDER=0><FONT FACE="Times New Roman, serif"><FONT SIZE=3><BR></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>Рисунок
+2. Процесс регистрации и отмены регистрации<BR></FONT></FONT><BR>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+   <FONT FACE="Times New Roman, serif"><FONT SIZE=4>Регистрация
+оконечного оборудования должна быть проведена до установления его
+первого соединения с любым другим оборудованием. Этот процесс может
+периодически повторяться, например, при включении питания
+оборудования, поэтому привратник должен уметь обрабатывать множество
+запросов регистрации от одного и того же оборудования.<BR>  Если
+привратник получает запрос RRQ, содержащий те же самые alias-адрес и
+транспортный адрес оконечного оборудования, что и в предыдущем RRQ,
+он должен ответить подтверждением RCF. Если привратник получает
+запрос RRQ с тем же, что и в предыдущем RRQ, alias-адресом, но с
+другим транспортным адресом, он может либо подтвердить регистрацию,
+либо отказать в ней, в зависимости от внутренней политики зоны сети.
+При приеме запроса RRQ, содержащего тот же, что и предыдущий RRQ,
+транспортный адрес, но другой alias-адрес оборудования, привратник
+должен закрепить за принятым транспортным адресом тот alias-адрес,
+который был принят последним, и подтвердить запрос. Заметим, что
+привратник может проверять наличие права пользователей на проведение
+вышеуказанных изменений.</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=4>Оконечное
+оборудование может регистрироваться на ограниченный промежуток
+времени, указывая в параметре timeToLive сообщения RRQ длительность
+этого промежутка в секундах. Привратник может подтвердить регистрацию
+сообщением RCF с параметром timeToLive, имеющим то же или меньшее
+значение. В течение указанного промежутка времени оконечное
+оборудование может продлить регистрацию, передав сообщение RRQ с
+параметром keepAlive. Получив это сообщение, привратник должен
+перезапустить таймер.</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=4>По истечении
+назначенного промежутка времени регистрация считается
+недействительной. В этом случае привратник может передать сообщение
+об отмене регистрации, и оконечное оборудование должно пройти
+повторную регистрацию.</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=4>Оконечное
+оборудование может отменить регистрацию у привратника, передав
+сообщение Unregister Request (URQ); привратник должен ответить
+подтверждением Unregister Confirmation (UCF). Такая процедура
+позволяет оборудованию изменить свой alias-адрес или транспортный
+адрес. Если оборудование не было зарегистрировано у привратника,
+последний должен ответить на требование URQ отказом Unregister Reject
+(URJ).<BR>  Привратник может отменить регистрацию оборудования,
+передав сообщение Unregister Request (URQ), при получении которого
+оконечное оборудование должно ответить подтверждением Unregister
+Confirmation (UCF). Теперь, чтобы получить возможность участия в
+любом соединении, оконечное оборудование должно перерегистрироваться
+у того же привратника или зарегистрироваться у нового.</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=4>Оборудование, не
+зарегистрированное у привратника, не может требовать от него допуск к
+участию в любых соединениях. Привратник не выполняет для этого
+оборудования такие функции как управление полосой пропускания,
+преобразование адресов и другие предусмотренные рекомендацией H.323
+функции. Кроме того, привратник может запретить оконечному
+оборудованию своей зоны принимать вызовы от оборудования, которое у
+него не зарегистрировано.</FONT></FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>Доступ оконечного
+оборудования к сетевым ресурсам</B></FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+    <FONT FACE="Times New Roman, serif"><FONT SIZE=4>Чтобы
+оборудование могло работать в сети, ему необходим доступ к ресурсам
+этой сети. В начальной фазе установления соединения, а также после
+получения сообщения Setup, оборудование обращается к привратнику при
+помощи запроса Admissions Request (ARQ) с просьбой разрешить
+соединение с другим оборудованием рис. 3). Это является началом
+процедуры доступа к сетевым ресурсам. Причем процедура доступа
+выполняется всеми участниками соединения.</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4>В сообщении ARQ
+содержится идентификатор оборудования, передавшего сообщение ARQ, и
+контактная информация того оборудования, с которым оно желает
+связаться. Контактная информация оборудования включает в себя
+alias-адрес и/или транспортный адрес сигнального канала, но, как
+правило, в запрос ARQ помещается только alias-адрес вызываемого
+оборудования. В сообщении ARQ указывается также верхний предел
+суммарной скорости передачи и приема пользовательской информации по
+всем речевым и видеоканалам (без учета заголовков RTP/UDP/IP и другой
+служебной информации).</FONT></FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4><BR></FONT></FONT><IMG SRC="%D0%9F%D0%A0%2013%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_6be8e8f3.gif" ALIGN=BOTTOM WIDTH=462 HEIGHT=113 BORDER=0><FONT FACE="Times New Roman, serif"><FONT SIZE=3><BR></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>Рисунок
+3. Управление доступом к сетевым ресурсам</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4><BR>  Как показано в
+примере на рис. 3, привратник может выделить требуемую полосу
+пропускания или снизить предел суммарной скорости, передав сообщение
+Admissions Confirm (ACF). В этом же сообщении, кроме суммарной
+скорости, указывается транспортный адрес сигнального канала
+встречного оборудования, если сигнальный канал будет связывать
+оборудование непосредственно, или адрес привратника, если он будет
+маршрутизировать сигнальные сообщения.</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=4>Если процедура
+доступа инициируется вызывающим оборудованием, то после получения
+ответа ACF на указанный в этом сообщении адрес передается сообщение
+Setup и делается попытка установить сигнальное соединение Н.225.0.
+Следует отметить, что инициирование процедуры доступа к сетевым
+ресурсам вызываемым оборудованием начинается после организации
+сигнального канала и получения по нему сообщения Setup.</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=4>Если требуемая
+полоса недоступна, привратник передает сообщение Admissions Reject
+ARJ.</FONT></FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>Определение
+местоположения оборудования в сети</B></FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=4>Если оконечное
+оборудование или привратник желают узнать контактную информацию
+(адреса сигнального канала и канала RAS), то при наличии alias-адрес
+этого оборудования, послается запрос Location Request (LRQ).
+Привратник, у которого зарегистрировано указанное оборудование,
+должен ответить сообщением Location Confirmation (LCF), содержащим
+требуемую контактную информацию. Эта процедура называется
+определением местоположения оконечного оборудования в сети (рис.6.4).</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=3><BR></FONT></FONT><IMG SRC="%D0%9F%D0%A0%2013%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_mb1b6994.gif" ALIGN=BOTTOM WIDTH=471 HEIGHT=142 BORDER=0><FONT FACE="Times New Roman, serif"><FONT SIZE=3><BR></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>Рисунок
+4. Определение местоположения оборудования в сети<BR>   Привратник,
+получивший на транспортный адрес своего канала RAS запрос LRQ, должен
+ответить отказом Location Reject (LRJ), если искомое оборудование у
+него не зарегистрировано. Привратники, у которых искомое оборудование
+не зарегистрировано, а сообщение LRQ они получили в режиме
+многоадресной рассылки Gatekeeper&prime;s Discovery Multicast, вообще
+не должны отвечать на запрос.</FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=4>Вышеописанная
+процедура используется, в частности, тогда, когда в сети имеется
+несколько зон, и вызов выходит за пределы одной зоны. Привратник, у
+которого зарегистрировано вызывающее оборудование, передает запрос
+адреса сигнального канала вызываемого оборудования.</FONT></FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>Опрос текущего
+состояния оборудования</B></FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+   <FONT FACE="Times New Roman, serif"><FONT SIZE=4>Поскольку
+необходим постоянный контроль за оборудованием и за процессом
+установления соединения привратник рассылает специальные сообщения
+через определенные интервалы времени. Данный процесс называется
+опросом текущего состояния оборудования (рис.5)</FONT></FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4><BR></FONT></FONT><IMG SRC="%D0%9F%D0%A0%2013%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_6a74655b.gif" ALIGN=BOTTOM WIDTH=463 HEIGHT=132 BORDER=0><FONT FACE="Times New Roman, serif"><FONT SIZE=3><BR><BR></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>Рисунок
+5. Опрос текущего состояния оборудования<BR></FONT></FONT><BR>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+    <FONT FACE="Times New Roman, serif"><FONT SIZE=4>Запрос
+информации о текущем состоянии (статусе) оборудования производится
+привратником при помощи сообщения Information Request (IRQ). Выбор
+интервала между посылками IRQ оставлен на усмотрение производителя,
+но он должен быть не меньше 10с. Получив запрос IRQ, оконечное
+оборудование должно передать запрашиваемую информацию в сообщении
+Information Request Response (IRR).</FONT></FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="      margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>Освобождение
+полосы пропускания</B></FONT></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+  <FONT FACE="Times New Roman, serif"><FONT SIZE=4>В конечной фазе
+разрушения соединения оборудование извещает привратник об
+освобождении раннее занимавшейся полосы пропускания (рис. 6).
+Оконечное оборудование передает своему привратнику сообщение
+Disengage Request (DRQ), на которое тот должен ответить
+подтверждением Disengage Confirm (DCF).</FONT></FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 100%">
+<IMG SRC="%D0%9F%D0%A0%2013%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_m5bae35fc.gif" ALIGN=BOTTOM WIDTH=455 HEIGHT=122 BORDER=0><FONT FACE="Times New Roman, serif"><FONT SIZE=3><BR></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>Рисунок
+6. Освобождение полосы пропускания</FONT></FONT></P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0cm; line-height: 100%"><A NAME="_GoBack"></A>
+<BR>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="      text-indent: 1cm; margin-bottom: 0cm; line-height: 100%">
+   <FONT FACE="Times New Roman, serif"><FONT SIZE=4>Привратник может
+сам инициировать освобождение сетевых ресурсов, т.е. разрушение
+существующего соединения, передав сообщение DRQ. Получив сообщение
+DRQ, оконечное оборудование должно закрыть логические каналы,
+управляющий и сигнальный каналы, а затем ответить подтверждением DCF.
+В случае если привратник инициирует завершение конференции, сообщение
+DRQ должно передаваться каждому ее участнику.</FONT></FONT></P>
+<P CLASS="western" STYLE="margin-bottom: 0.35cm"><BR><BR>
+</P>
+</BODY>
+</HTML>

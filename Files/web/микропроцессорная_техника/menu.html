@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html class="menu">
+
+
+<head>
+
+<meta charset="utf-8"/>
+<meta name="google" value="notranslate"/>
+<title>Side Menu</title>
+<style>
+
+
+    body
+{
+  margin:0px;
+  padding:0px;
+	font-family: "Open Sans", arial;
+	color:#fff;
+	font-weight:300;
+    border-radius: 1em;
+    border-radius: 1em;
+ 
+
+
+
+}
+
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+
+.settings {
+  
+  height:73px; 
+  float:left;
+  background:url( https://s3.postimg.org/bqfooag4z/startific.jpg);
+  background-repeat:no-repeat;
+  width:250px;
+  margin:0px;
+ text-align: center;
+font-size:20px;
+font-family: 'Strait', sans-serif;
+
+}
+
+
+
+
+
+
+/* ScrolBar  */
+.scrollbar
+{
+
+height: 90%;
+width: 100%;
+overflow-y: hidden;
+overflow-x: hidden;
+}
+
+.scrollbar:hover
+{
+
+height: 90%;
+width: 100%;
+overflow-y: scroll;
+overflow-x: hidden;
+}
+
+/* Scrollbar Style */ 
+
+
+
+#style-1::-webkit-scrollbar-track
+{
+border-radius: 2px;
+}
+
+#style-1::-webkit-scrollbar
+{
+width: 5px;
+background-color: #F7F7F7;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+background-color: #BFBFBF;
+}
+/* Scrollbar End */ 
+
+
+
+
+.fa-lg {
+font-size: 1em;
+  
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 150px;
+height: 36px;
+text-align: center;
+top:12px; 
+font-size:20px;
+
+}
+
+
+
+.main-menu:hover, nav.main-menu.expanded {
+width:250px;
+overflow:hidden;
+opacity:1;
+
+}
+
+.main-menu {
+background:#F7F7F7;
+position:absolute;
+top: -50px;
+bottom:0;
+height:100%;
+left: 0px;
+width: 47px;
+overflow:hidden;
+-webkit-transition:width .2s linear;
+transition:width .2s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+transform: translateZ(0) scale(1,1);
+box-shadow: 1px 0 15px rgba(0, 0, 0, 0.07);
+opacity:1;
+}
+
+.main-menu>ul {
+margin-left: -50px;
+
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+  
+
+
+}
+
+.main-menu li>a {
+position:relative;
+width:255px;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#8a8a8a;
+font-size: 13px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+transform: translateZ(0) scale(1,1);
+-webkit-transition:all .14s linear;
+transition:all .14s linear;
+font-family: 'Strait', sans-serif;
+border-top:1px solid #f2f2f2;
+
+text-shadow: 1px 1px 1px  #fff;  
+}
+
+
+
+.main-menu .nav-icon {
+  
+position:relative;
+display:table-cell;
+width:55px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+
+}
+
+.main-menu .nav-text  {
+   
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width: 200px;
+font-family: 'Titillium Web', sans-serif;
+}
+
+
+
+
+
+.main-menu .fb-like {
+
+left: 180px;
+position:absolute;
+top: 15px;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+  
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+  
+}
+
+
+/* Logo Hover Property */
+
+
+.settings:hover, settings:focus {   
+  background:url( https://s17.postimg.org/74cl7s05b/logo_hover.jpg);
+  -webkit-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
+-moz-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
+-o-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
+transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0; 
+}
+
+.settings:active, settings:focus {   
+  background:url( https://s3.postimg.org/bqfooag4z/startific.jpg);
+  -webkit-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
+-moz-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
+-o-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
+transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0; 
+}
+
+
+a:hover,a:focus {
+text-decoration:none;
+border-left:0px solid #F7F7F7;
+
+
+
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+  
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+text-transform: uppercase;
+}
+
+
+
+
+/* Darker element side menu Start*/
+
+
+.darkerli
+{
+background-color:#ededed;
+text-transform:capitalize;  
+}
+
+.darkerlishadow
+{
+background-color:#ededed;
+text-transform:capitalize;  
+-webkit-box-shadow: inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
+-moz-box-shadow:    inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
+box-shadow:         inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
+}
+
+
+.darkerlishadowdown
+{
+background-color:#ededed;
+text-transform:capitalize;  
+-webkit-box-shadow: inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
+-moz-box-shadow:    inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
+box-shadow:         inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
+}
+
+/* Darker element side menu End*/
+
+
+
+
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background: var(--button-background);
+  color: var(--button-color);
+text-shadow: 0px 0px 0px; 
+}
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+
+/* Follow me for more pens like this! */
+
+/* Tweak to change the look and feel */
+:root {
+  --button-background: dodgerblue;
+  --button-color: white;
+  
+  --dropdown-highlight: dodgerblue;
+  --dropdown-width: 100%;
+  --dropdown-background: white;
+  --dropdown-color: black;
+}
+
+/* Boring button styles */
+a.button {
+  
+  /* Frame */
+  display: inline-block;
+  padding: 5px 5px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  
+  /* Style */
+  border: none;
+  color: black;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+a.button:active {
+  filter: brightness(75%);
+}
+
+a.button:hover {
+    background: var(--button-background);
+  color: var(--button-color);
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  padding: 0;
+  margin-right: 1em;
+  
+  border: none;
+}
+
+.dropdown summary {
+  list-style: none;
+  list-style-type: none;
+}
+
+.dropdown > summary::-webkit-details-marker {
+  display: none;
+}
+
+.dropdown summary:focus {
+  outline: none;
+}
+
+.dropdown summary:focus a.button {
+  border: 2px solid white;
+}
+
+.dropdown summary:focus {
+  outline: none;
+}
+
+.dropdown ul {
+  position: absolute;
+  margin: 20px 0 0 0;
+  padding: 20px 0;
+  width: var(--dropdown-width);
+  left: 50%;
+  margin-left: calc((var(--dropdown-width) / 2)  * -1);
+  box-sizing: border-box;
+  z-index: 2;
+  
+  background: var(--dropdown-background);
+  border-radius: 6px;
+  list-style: none;
+}
+
+.dropdown ul li {
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown ul li a:link, .dropdown ul li a:visited {
+  display: inline-block;
+  padding: 10px 0.8rem;
+  width: 100%;
+  box-sizing: border-box;
+  
+  color: var(--dropdown-color);
+  text-decoration: none;
+}
+
+.dropdown ul li a:hover {
+  background-color: var(--dropdown-highlight);
+  color: var(--dropdown-background);
+}
+
+/* Dropdown triangle */
+.dropdown ul::before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -10px;
+  left: 50%;
+  margin-left: -10px;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent var(--dropdown-background) transparent;
+}
+
+
+/* Close the dropdown with outside clicks */
+.dropdown > summary::before {
+  display: none;
+}
+
+.dropdown[open] > summary::before {
+    content: ' ';
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+
+</style>
+
+
+
+
+  
+ 
+
+
+
+</head>
+<body>
+
+
+
+<nav class="main-menu">
+
+ 
+ 
+
+<div class="settings"></div>
+<div class="scrollbar" id="style-1">
+
+   
+<li>                                 
+<a href="#">
+
+    <span><a href="ARM/АРМ-лекционный-ЦУ-и-М.html" target="content" style="margin-left: 5px; width: 100%; height: 30px; text-decoration: none;">Меню</a>
+    </span>
+
+</a>
+
+
+<li>                                 
+    <details class="dropdown">
+        <summary role="button">
+          <a class="button">  <i class="fa fa-user fa-lg"></i>  <span class="nav-text">ЦУ и М АРМ лабораторный</span></a>
+        </summary>
+        <ul>
+          <li><a href="./Практика/ЛР № 1. Исследование работы ЦУ на логических элементах.html" target="content">ЛР № 1. Исследование работы ЦУ на логических элементах</a></li>
+          <li><a href="./Практика/ЛР № 2. Исследование работы микросхемы шифратора.html" target="content">ЛР № 2. Исследование работы микросхемы шифратора</a></li>
+          <li><a href="./Практика/ЛР № 3. Исследование работы микросхемы дешифратора.html" target="content">ЛР № 3. Исследование работы микросхемы дешифратора</a></li>
+          <li><a href="./Практика/ЛР № 4. Исследование работы микросхемы преобразователя кодов.html" target="content">ЛР № 4. Исследование работы микросхемы преобразователя кодов</a></li>
+          <li><a href="./Практика/ЛР № 5. Исследование работы микросхемы мультиплексора.html" target="content">ЛР № 5. Исследование работы микросхемы мультиплексора</a></li>
+          <li><a href="./Практика/ЛР № 6. Исследование работы микросхемы демультиплексора.html" target="content">ЛР № 6. Исследование работы микросхемы демультиплексора</a></li>
+          <li><a href="./Практика/ЛР-№-7.-Исследование-работы-регистров.html" target="content">ЛР № 7. Исследование работы регистров</a></li>
+          <li><a href="./Практика/ЛР-№-8.-Исследование-работы-микросхемы-счетчика.html" target="content">ЛР № 8. Исследование работы микросхемы счетчика</a></li>
+          <li><a href="./Практика/ЛР-№-9.-Исследование-работы-микросхемы-сумматора.html" target="content">ЛР № 9. Исследование работы микросхемы сумматора</a></li>
+          <li><a href="./Практика/ЛР-№-10.-Исследование-работы-субтрактора.html" target="content">ЛР № 10. Исследование работы субтрактора</a></li>
+          <li><a href="./Практика/ЛР-№-11.-Исследование-работы-цифрового-компаратора.html" target="content">ЛР № 11. Исследование работы цифрового компаратора</a></li>
+          <li><a href="./Практика/ЛР-№12.-Исследование-работы-микросхемы-контроля-четности.html" target="content">ЛР №12. Исследование работы микросхемы контроля четности</a></li>
+          <li><a href="./Практика/ЛР-№-13.-Исследование-работы-RS-и-JK-триггеров.html" target="content">ЛР № 13. Исследование работы RS и JK-триггеров</a></li>
+          <li><a href="./Практика/ЛР-№-14.-Исследование-работы-D-и-Т-триггеров.html" target="content">ЛР № 14. Исследование работы D и Т-триггеров</a></li>
+          <li><a href="./Практика/ЛР-№-15.-Исследование-работы-мультивибратора.html" target="content">ЛР № 15. Исследование работы мультивибратора</a></li>
+          <li><a href="./Практика/тит-лист-к-лаб.html" target="content">тит лист к лаб</a></li>
+
+
+      </ul>
+    </details>
+    <details class="dropdown">
+        <summary role="button">
+          <a class="button">  <i class="fa fa-user fa-lg"></i>  <span class="nav-text">ЦУ и М АРМ семинарский</span></a>
+        </summary>
+        <ul>
+            <li><a href="./Лекций/ПР № 1 .html" target="content">ПР № 1 </a></li>
+            <li><a href="./Лекций/ПР № 2 (описание).html" target="content">ПР № 2 (описание)</a></li>
+            <li><a href="./Лекций/ПР №2 (карточки с заданиями).html" target="content">ПР №2 (карточки с заданиями)</a></li>
+            <li><a href="./Лекций/ПР №3.html" target="content">ПР № 3 </a></li>
+            <li><a href="./Лекций/ПР №3 (описание).html" target="content">ПР № 3 (описание)</a></li>
+            <li><a href="./Лекций/ПР № 4(описание).html" target="content">ПР № 4(описание)</a></li>
+            <li><a href="./Лекций/ПР № 5 (1).html" target="content">ПР № 5 (1)</a></li>
+            <li><a href="./Лекций/ПР № 5(задания).html" target="content">ПР № 5(задания)</a></li>
+            <li><a href="./Лекций/ПР № 6-7 (задания).html" target="content">ПР № 6-7 (задания)</a></li>
+            <li><a href="./Лекций/ПР № 6-7 (описание).html" target="content">ПР № 6-7 (описание)</a></li>
+            <li><a href="./Лекций/ПР № 8-9 (задание).html" target="content">ПР № 8-9 (задание)</a></li>
+            <li><a href="./Лекций/ПР № 8-9 (описание).html" target="content">ПР № 8-9 (описание)</a></li>
+            <li><a href="./Лекций/ПР № 10-11 (описание).html" target="content">ПР № 10-11 (описание)</a></li>
+            <li><a href="./Лекций/ПР № 10-11.html" target="content">ПР № 10-11</a></li>
+            <li><a href="./Лекций/ПР № 12-13 (описание).html" target="content">ПР № 12-13 (описание)</a></li>
+            <li><a href="./Лекций/ПР № 12-13.html" target="content">ПР № 12-13</a></li>
+            <li><a href="./Лекций/ПР № 14-15 (описание).html " target="content">ПР № 14-15 (описание)</a></li>
+            <li><a href="./Лекций/ПР № 14-15.html" target="content">ПР № 14-15</a></li>
+            <li><a href="./Лекций/тит лист к практ по ЦУМ.html" target="content">тит лист к практ по ЦУМ</a></li>
+
+            
+           
+      </ul>
+    </details>
+
+</li>   
+
+
+
+
+ 
+
+
+</div>
+</nav>
+</body></html>
+
+
+
+  
+
+			
+  

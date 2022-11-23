@@ -1,0 +1,3547 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Вариант № 1</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+h1
+	{margin:0in;
+	text-align:justify;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:normal;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0in;
+	text-align:justify;
+	text-indent:.5in;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:36.85pt 56.7pt 36.85pt 56.7pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 1</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 11, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 0, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 2</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 13, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 0, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 3</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 14, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 0, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 4</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 15, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 0, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 5</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 9, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 0, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 6</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 10, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 0, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 7</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 11, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 0, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 8</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную электрическую
+схему вычитающего счетчика на микросхемах интегральных триггеров и логических
+элементов с коэффициентом счета </span><span style='font-size:12.0pt;
+line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'> = 13, который формирует результат подсчета импульсов обычным двоичным
+кодом. Счет начинается с 0, при достижении предела счетчик возвращается в
+начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 9</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 15, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 0, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 10</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 9, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 5, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 11</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 9, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 7, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается самостоятельно
+(не использовать </span><span style='font-size:12.0pt;line-height:95%'>RS</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеры!): при использовании
+Т-триггеров оценка работы будет увеличена, а при использовании </span><span
+style='font-size:12.0pt;line-height:95%'>D</span><span lang=RU
+style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 12</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную электрическую
+схему суммирующего счетчика на микросхемах интегральных триггеров и логических
+элементов с коэффициентом счета </span><span style='font-size:12.0pt;
+line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'> = 10, который формирует результат подсчета импульсов обычным двоичным
+кодом. Счет начинается с 3, при достижении предела счетчик возвращается в
+начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 13</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 10, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 4, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 14</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 10, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 6, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 15</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 11, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 2, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается самостоятельно
+(не использовать </span><span style='font-size:12.0pt;line-height:95%'>RS</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеры!): при использовании
+Т-триггеров оценка работы будет увеличена, а при использовании </span><span
+style='font-size:12.0pt;line-height:95%'>D</span><span lang=RU
+style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 16</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную электрическую
+схему суммирующего счетчика на микросхемах интегральных триггеров и логических
+элементов с коэффициентом счета </span><span style='font-size:12.0pt;
+line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'> = 11, который формирует результат подсчета импульсов обычным двоичным
+кодом. Счет начинается с 3, при достижении предела счетчик возвращается в
+начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 17</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 11, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 4, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 18</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 11, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 5, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 19</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 12, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 2, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 20</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную электрическую
+схему суммирующего счетчика на микросхемах интегральных триггеров и логических
+элементов с коэффициентом счета </span><span style='font-size:12.0pt;
+line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'> = 12, который формирует результат подсчета импульсов обычным двоичным
+кодом. Счет начинается с 3, при достижении предела счетчик возвращается в
+начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 21</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 13, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 1, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 22</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 13, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 2, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 23</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 13, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 3, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 24</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную электрическую
+схему суммирующего счетчика на микросхемах интегральных триггеров и логических
+элементов с коэффициентом счета </span><span style='font-size:12.0pt;
+line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'> = 14, который формирует результат подсчета импульсов обычным двоичным
+кодом. Счет начинается с 2, при достижении предела счетчик возвращается в
+начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 25</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 9, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 10, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 26</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 10, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 11, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 27</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 10, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 12, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 28</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 11, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 11, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается самостоятельно:
+при использовании базиса И-НЕ оценка будет выше, но в этом случае следует
+показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b>  При
+увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 29</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 11, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 12, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № </span></b><b><span
+style='font-size:18.0pt;line-height:90%'>10-11</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 30</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 11, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 13, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 31</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 11, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 15, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 32</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 12, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 12, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 33</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 12, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 13, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 34</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 13, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 13, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 35</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 13, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 14, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 36</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 14, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 14, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 37</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 14, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 15, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 38</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 15, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 15, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 39</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 11, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 0, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 40</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 13, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 0, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 41</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 14, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 0, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена, а
+при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 42</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 15, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 0, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 43</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 9, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 0, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 44</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 10, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 0, при достижении предела счетчик возвращается
+в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 45</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 11, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 0, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 46</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 13, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 0, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 47</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 15, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 0, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 48</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 9, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 5, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается самостоятельно:
+при использовании базиса И-НЕ оценка будет выше, но в этом случае следует
+показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b>  При
+увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 49</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 9, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 7, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 50</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 10, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 3, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 51</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 10, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 4, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом случае
+следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b>  При
+увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 52</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 10, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 6, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 53</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 11, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 2, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 54</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 11, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 3, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 55</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 11, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 4, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 56</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 11, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 5, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 57</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 12, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 2, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 58</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 12, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 3, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 59</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 13, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 1, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 60</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 13, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 2, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 61</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 13, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 3, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 62</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему суммирующего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 14, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 2, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 63</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 9, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 10, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 64</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 10, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 11, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 65</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную электрическую
+схему вычитающего счетчика на микросхемах интегральных триггеров и логических
+элементов с коэффициентом счета </span><span style='font-size:12.0pt;
+line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'> = 10, который формирует результат подсчета импульсов обычным двоичным
+кодом. Счет начинается с 12, при достижении предела счетчик возвращается в
+начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 66</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 11, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 11, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 67</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 11, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 12, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 68</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 11, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 13, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 69</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 11, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 15, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 70</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 12, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 12, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 71</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 12, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 13, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 72</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 13, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 13, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом случае
+следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b>  При
+увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 73</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 13, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 14, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 74</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 14, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 14, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 75</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 14, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 15, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><span lang=RU
+style='font-size:18.0pt;line-height:90%'>Практическая работа № 15</span></b></h1>
+
+<p class=MsoNormal><span lang=RU style='font-size:14.0pt'>&nbsp;</span></p>
+
+<h1 align=center style='text-align:center;line-height:90%'><b><i><u><span
+lang=RU style='font-size:16.0pt;line-height:90%'>Вариант № 76</span></u></i></b></h1>
+
+<p class=MsoNormal style='text-align:justify;line-height:90%'><span lang=RU
+style='font-size:14.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Разработать принципиальную
+электрическую схему вычитающего счетчика на микросхемах интегральных триггеров
+и логических элементов с коэффициентом счета </span><span style='font-size:
+12.0pt;line-height:95%'>N</span><span lang=RU style='font-size:12.0pt;
+line-height:95%'> = 15, который формирует результат подсчета импульсов обычным
+двоичным кодом. Счет начинается с 15, при достижении предела счетчик
+возвращается в начальное состояние.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Вид триггеров в счетчике выбирается
+самостоятельно (не использовать </span><span style='font-size:12.0pt;
+line-height:95%'>RS</span><span lang=RU style='font-size:12.0pt;line-height:
+95%'>-триггеры!): при использовании Т-триггеров оценка работы будет увеличена,
+а при использовании </span><span style='font-size:12.0pt;line-height:95%'>D</span><span
+lang=RU style='font-size:12.0pt;line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='font-size:12.0pt;line-height:95%'>Базис построения также выбирается
+самостоятельно: при использовании базиса И-НЕ оценка будет выше, но в этом
+случае следует показывать процесс перехода к базису И-НЕ. <b><i>Внимание!</i></b> 
+При увеличении задержки или аппаратурных затрат применение базиса И-НЕ не
+рекомендуется!</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:90%'><span
+lang=RU style='font-size:12.0pt;line-height:90%'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

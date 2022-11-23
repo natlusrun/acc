@@ -1,0 +1,408 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1251">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice 4.1.13  (Win32)">
+	<META NAME="AUTHOR" CONTENT="Admin">
+	<META NAME="CREATED" CONTENT="20201004;6340000">
+	<META NAME="CHANGEDBY" CONTENT="Admin">
+	<META NAME="CHANGED" CONTENT="20201009;8300000">
+	<META NAME="AppVersion" CONTENT="16.0000">
+	<META NAME="DocSecurity" CONTENT="0">
+	<META NAME="HyperlinksChanged" CONTENT="false">
+	<META NAME="LinksUpToDate" CONTENT="false">
+	<META NAME="ScaleCrop" CONTENT="false">
+	<META NAME="ShareDoc" CONTENT="false">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: 21cm 29.7cm; margin-right: 1.5cm; margin-top: 2cm; margin-bottom: 2cm }
+		* {margin-left: 0;}
+		font{font-size: 20px; line-height: 103%; widows: 2; orphans: 2}
+		img {text-align: center;}
+		table {text-align: center; margin-left: 420px;}
+		P { text-indent: -0.02cm; margin-bottom: 0.21cm; direction: ltr; color: #000000; line-height: 103%; widows: 2; orphans: 2 }
+		P.western { font-family: "Times New Roman", serif; font-size: 20px }
+		P.cjk { font-family: "Times New Roman"; font-size: 20px; so-language: ru-RU }
+		P.ctl { font-family: "Times New Roman" }
+		H2 {text-indent: -0.02cm; margin-bottom: 0cm; direction: ltr; color: #000000; line-height: 103%; page-break-inside: avoid; widows: 2; orphans: 2; page-break-after: avoid }
+		H2.western { font-family: "Times New Roman", sans-serif; font-size: 20px; font-weight: bold }
+		H2.cjk { font-family: "Times New Roman"; font-size: 20px; so-language: ru-RU; font-weight: bold }
+		H2.ctl { font-family: "Times New Roman"; font-size: 20px }
+		H3 {text-indent: -0.02cm; margin-bottom: 0.17cm; direction: ltr; color: #000000; line-height: 103%; page-break-inside: avoid; widows: 2; orphans: 2; page-break-after: avoid }
+		H3.western { font-family: "Cambria", sans-serif; font-size: 20px; font-weight: bold }
+		H3.cjk { font-family: "Cambria"; font-size: 20px; so-language: ru-RU; font-weight: bold }
+		H3.ctl { font-family: "Cambria"; font-size: 20px }
+		H4 {text-indent: -0.02cm; margin-bottom: 0.2cm; direction: ltr; color: #000000; line-height: 103%; page-break-inside: avoid; widows: 2; orphans: 2; page-break-after: avoid }
+		H4.western { font-family: "Cambria", sans-serif; font-size: 20px; font-weight: bold }
+		H4.cjk { font-family: "Cambria"; font-size: 20px; so-language: ru-RU; font-weight: bold }
+		H4.ctl { font-family: "Cambria"; font-size: 20px }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="ru-RU" TEXT="#000000" LINK="#000080" VLINK="#800000" DIR="LTR">
+<P ALIGN=CENTER STYLE="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 100%"><A NAME="_GoBack"></A>
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>Практическая
+работа 14</B></FONT></FONT></P>
+<P ALIGN=CENTER STYLE="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P ALIGN=CENTER STYLE="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 100%">
+<FONT FACE="Times New Roman, serif"><FONT SIZE=4><B>Каналы связи и их
+характеристики</B></FONT></FONT></P>
+<P ALIGN=CENTER STYLE="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 100%">
+<BR>
+</P>
+<P STYLE="      margin-bottom: 0cm; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Цель
+работы:</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+Научиться производить расчеты непрерывных каналов связи</FONT></FONT></P>
+<P STYLE="      margin-bottom: 0cm; line-height: 100%"><BR>
+</P>
+<P STYLE="      margin-bottom: 0cm; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Задание
+на практическую работу:</B></FONT></FONT></P>
+<P STYLE="      margin-bottom: 0cm; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>-
+произвести расчеты, используя данные таблицы 1 по варианту</FONT></FONT></P>
+<P STYLE="      margin-bottom: 0cm; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Определить:
+<BR>&ndash;&nbsp;дифференциальную энтропию входного сигнала;
+<BR>&ndash;&nbsp;дифференциальную энтропию выходного сигнала;
+<BR>&ndash;&nbsp;условную дифференциальную энтропию; <BR>&ndash;&nbsp;количество
+информации в одном непрерывном отсчете процесса </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><I>Y(t)</I></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+относительно отсчета</FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><I>
+X(t)</I></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>;
+<BR>&ndash;&nbsp;скорость передачи информации по непрерывному каналу
+с дискретным временем; <BR>&ndash;&nbsp;пропускную способность
+непрерывного канала связи; <BR>&ndash;&nbsp;определить емкость канала
+связи, если время его работы </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><I>T
+= 10&nbsp;м</I></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>;
+<BR>&ndash;&nbsp;определить количество информации, которое может быть
+передано за 10 минут работы канала;</FONT></FONT></P>
+<P STYLE="      margin-bottom: 0cm; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Сделать
+выводы по работе <BR></B></FONT></FONT><BR>
+</P>
+<P STYLE="      margin-bottom: 0cm; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>По
+непрерывному каналу связи, имеющим полосу пропускания</FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><I>,</I></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+передается полезный сигнал </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><I>X(t)</I></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>,
+представляющий собой нормальный случайный процесс с нулевым
+математическим ожиданием и дисперсией </FONT></FONT>
+<IMG SRC="%D0%9F%D0%A0%2014%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_m6077d183.png" ALIGN=BOTTOM WIDTH=69 HEIGHT=32 BORDER=0><FONT FACE="Times New Roman, serif"><FONT SIZE=3>.
+В канале действует независимый от сигнала гауссов шум </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><I>F(t)</I></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+с нулевым математическим ожиданием и дисперсией </FONT></FONT>
+<IMG SRC="%D0%9F%D0%A0%2014%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_7c0c4b49.png" ALIGN=BOTTOM WIDTH=75 HEIGHT=39 BORDER=0><FONT FACE="Times New Roman, serif"><FONT SIZE=3>.
+</FONT></FONT>
+</P>
+<P STYLE="      margin-bottom: 0cm; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>Данные
+для задания  приведены в таблице 1. <BR></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+Таблица 1 &ndash; Исходные данные для расчетов</FONT></FONT></P>
+<TABLE WIDTH=447 BORDER=1 BORDERCOLOR="#000001" CELLPADDING=7 CELLSPACING=0>
+	<COL WIDTH=69>
+	<COL WIDTH=76>
+	<COL WIDTH=76>
+	<COL WIDTH=77>
+	<COL WIDTH=76>
+	<TR VALIGN=TOP>
+		<TD WIDTH=69 HEIGHT=41>
+			<P><FONT FACE="Times New Roman, serif"><FONT SIZE=4>Вариант </FONT></FONT>
+			</P>
+		</TD>
+		<TD WIDTH=76>
+			<P><BR>
+			</P>
+		</TD>
+		<TD WIDTH=76>
+			<P><FONT FACE="Times New Roman, serif"><FONT SIZE=4><I>F</I></FONT></FONT><SUB><FONT FACE="Times New Roman, serif"><FONT SIZE=4><I>k</I></FONT></FONT></SUB><FONT FACE="Times New Roman, serif"><FONT SIZE=4><I>
+			(кГц)</I></FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77>
+			<P STYLE="margin-bottom: 0cm"><IMG SRC="%D0%9F%D0%A0%2014%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_m6077d183.png" ALIGN=BOTTOM WIDTH=69 HEIGHT=32 BORDER=0></P>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>мВ</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P STYLE="margin-bottom: 0cm"><IMG SRC="%D0%9F%D0%A0%2014%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_7c0c4b49.png" ALIGN=BOTTOM WIDTH=75 HEIGHT=28 BORDER=0></P>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>мВ</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=69 HEIGHT=8>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>1,13</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>1</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>3</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>2</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=69 HEIGHT=8>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>2,14</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>3</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>5</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>3</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=69 HEIGHT=8>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>3,15</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>4</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>2</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>1</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=69 HEIGHT=9>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>4,16</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>2</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>5</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>4</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=69 HEIGHT=9>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>5,17</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>5</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>7</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>5</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=69 HEIGHT=9>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>6,18</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>6</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>5</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>3</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=69 HEIGHT=9>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>7,19</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>7</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>3</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>2</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=69 HEIGHT=9>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>8,20</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>1</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>5</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>3</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=69 HEIGHT=9>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>9,
+			21</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>4</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>4</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>2</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=69 HEIGHT=9>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>10,
+			22</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>3</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>5</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>4</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=69 HEIGHT=9>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>11,
+			23</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>2</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>3</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>1</FONT></FONT></P>
+		</TD>
+	</TR>
+	<TR VALIGN=TOP>
+		<TD WIDTH=69 HEIGHT=8>
+			<P ALIGN=CENTER> <FONT FACE="Times New Roman, serif"><FONT SIZE=4>12,
+			24</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><BR>
+			</P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>5</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=77>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>6</FONT></FONT></P>
+		</TD>
+		<TD WIDTH=76>
+			<P ALIGN=CENTER><FONT FACE="Times New Roman, serif"><FONT SIZE=4>5</FONT></FONT></P>
+		</TD>
+	</TR>
+</TABLE>
+<P ALIGN=CENTER STYLE="margin-bottom: 0.28cm"><BR><BR>
+</P>
+<P ALIGN=CENTER STYLE="      margin-bottom: 0.28cm"><BR><BR>
+</P>
+<P ALIGN=CENTER STYLE="      margin-bottom: 0.28cm"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Методические
+указания по выполнению работы</B></FONT></FONT></P>
+<P STYLE="      margin-bottom: 0cm; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=3>По
+непрерывному каналу связи, имеющим полосу пропускания </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><I>F</I></FONT></FONT><SUB><FONT FACE="Times New Roman, serif"><FONT SIZE=3><I>k</I></FONT></FONT></SUB><FONT FACE="Times New Roman, serif"><FONT SIZE=3><I>
+= 1 кГц,</I></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+передается полезный сигнал </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><I>X(t)</I></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>,
+представляющий собой нормальный случайный процесс с нулевым
+математическим ожиданием и дисперсией </FONT></FONT>
+<IMG SRC="%D0%9F%D0%A0%2014%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_m6077d183.png" ALIGN=BOTTOM WIDTH=69 HEIGHT=32 BORDER=0><FONT FACE="Times New Roman, serif"><FONT SIZE=3>=</FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><I>
+4 мВ. </I></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>В
+канале действует независимый от сигнала гауссов шум </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><I>F(t)</I></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+с нулевым математическим ожиданием и дисперсией </FONT></FONT>
+<IMG SRC="%D0%9F%D0%A0%2014%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_7c0c4b49.png" ALIGN=BOTTOM WIDTH=75 HEIGHT=39 BORDER=0><FONT FACE="Times New Roman, serif"><FONT SIZE=3>=
+1 мВ. <BR>Определить:</FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>
+</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><BR>&ndash;&nbsp;дифференциальную
+энтропию входного сигнала; <BR>&ndash;&nbsp;дифференциальную энтропию
+выходного сигнала; <BR>&ndash;&nbsp;условную дифференциальную
+энтропию; <BR>&ndash;&nbsp;количество информации в одном непрерывном
+отсчете процесса </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><I>Y(t)</I></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+относительно отсчета</FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><I>
+X(t)</I></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>;
+<BR>&ndash;&nbsp;скорость передачи информации по непрерывному каналу
+с дискретным временем; <BR>&ndash;&nbsp;пропускную способность
+непрерывного канала связи; <BR>&ndash;&nbsp;емкость канала связи,
+если время его работы </FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><I>T
+= 10&nbsp;м</I></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>;
+<BR>&ndash;&nbsp;количество информации, которое может быть передано
+за 10 минут работы канала; <BR></FONT></FONT><BR>
+</P>
+<P STYLE="      margin-bottom: 0cm; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Решение</B></FONT></FONT></P>
+<P STYLE="      margin-bottom: 0cm; line-height: 100%"><FONT FACE="Times New Roman, serif"><FONT SIZE=3><BR></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Дифференциальная
+энтропия входного сигнала</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>:<BR></FONT></FONT><IMG SRC="%D0%9F%D0%A0%2014%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_5992d4f1.png" ALIGN=BOTTOM WIDTH=13 HEIGHT=25 BORDER=0><IMG SRC="%D0%9F%D0%A0%2014%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_m5d3d37d.png" ALIGN=BOTTOM WIDTH=167 HEIGHT=33 BORDER=0><FONT FACE="Times New Roman, serif"><FONT SIZE=3>=
+3,05 бит/отсчет. <BR></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Дифференциальная
+энтропия выходного сигнала: </B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><BR></FONT></FONT><IMG SRC="%D0%9F%D0%A0%2014%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_4387936.png" ALIGN=BOTTOM WIDTH=365 HEIGHT=39 BORDER=0><FONT FACE="Times New Roman, serif"><FONT SIZE=3>=3,21
+бит/отсчет. <BR></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Условная
+дифференциальная энтропия </B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><BR></FONT></FONT><IMG SRC="%D0%9F%D0%A0%2014%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_3abc06bb.png" ALIGN=BOTTOM WIDTH=349 HEIGHT=39 BORDER=0><FONT FACE="Times New Roman, serif"><FONT SIZE=3>=
+2,05 бит/отсчет. <BR></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Количество
+информации в одном непрерывном отсчете процесса Y(t) относительно
+отсчета X(t) определяется по формуле</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>
+:<BR>I (X, Y) = h(x) &ndash; h (x/y) = h(y) &ndash; h (y/x) =
+3,21&ndash;2,05 = 1,16 бит/отсчет. <BR>Скорость передачи информации
+по непрерывному каналу с дискретным временем определяется по формуле:
+</FONT></FONT>
+<IMG SRC="%D0%9F%D0%A0%2014%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_5992d4f1.png" ALIGN=BOTTOM WIDTH=13 HEIGHT=25 BORDER=0><FONT FACE="Times New Roman, serif"><FONT SIZE=3><BR></FONT></FONT><IMG SRC="%D0%9F%D0%A0%2014%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_3cb4b56c.png" ALIGN=BOTTOM WIDTH=373 HEIGHT=25 BORDER=0><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>=
+</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><BR></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>=
+</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>2&times;10</FONT></FONT><SUP><FONT FACE="Times New Roman, serif"><FONT SIZE=3>3</FONT></FONT></SUP><FONT FACE="Times New Roman, serif"><FONT SIZE=3>&times;
+[3,21&ndash;2,05] = 2320 бит/с <BR></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><B>Пропускная
+способность непрерывного канала с помехами определяется по
+формуле:</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3><BR></FONT></FONT><IMG SRC="%D0%9F%D0%A0%2014%20%D0%9A%D0%A1%20%D0%B8%20%D0%A1%D0%90_html_1c67d1b1.png" ALIGN=BOTTOM WIDTH=630 HEIGHT=72 BORDER=0><FONT FACE="Times New Roman, serif"><FONT SIZE=4><BR></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3>=2322
+бит/с.</FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=4>
+</FONT></FONT>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0.28cm"><BR><BR>
+</P>
+<P ALIGN=CENTER STYLE="margin-bottom: 0.28cm"><BR><BR>
+</P>
+<P STYLE="margin-bottom: 0.28cm"><BR><BR>
+</P>
+</BODY>
+</HTML>

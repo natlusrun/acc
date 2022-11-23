@@ -1,0 +1,1091 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0in;
+	text-align:justify;
+	text-indent:.5in;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:56.7pt 34.0pt 59.55pt 73.7pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+0in'><b><i><span lang=RU>&nbsp;</span></i></b></p>
+
+<p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+0in'><b><i><span lang=RU>Практическая работа № </span></i></b><b><i>10-11</i></b></p>
+
+<p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+0in'><b><i><span lang=RU>&nbsp;</span></i></b></p>
+
+<p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+0in'><b><i><span lang=RU>«Синтез счетчика с параллельным переносом»</span></i></b></p>
+
+<p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+0in;line-height:95%'><b><i><span lang=RU style='line-height:95%'>&nbsp;</span></i></b></p>
+
+<p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+0in;line-height:95%'><b><i><span lang=RU style='line-height:95%'>Цель работы:</span></i></b></p>
+
+<p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+0in;line-height:95%'><b><i><span lang=RU style='line-height:95%'>&nbsp;</span></i></b></p>
+
+<p class=MsoBodyTextIndent style='margin-left:0in;line-height:95%'><span
+lang=RU style='line-height:95%'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=RU style='line-height:95%'>Закрепление знаний по
+счетчикам.</span></p>
+
+<p class=MsoBodyTextIndent style='margin-left:0in;line-height:95%'><span
+lang=RU style='line-height:95%'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=RU style='line-height:95%'>Получение практических
+навыков синтеза и анализа работы последовательностных ЦУ.</span></p>
+
+<p class=MsoBodyTextIndent style='margin-left:0in;line-height:95%'><span
+lang=RU style='line-height:95%'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=RU style='line-height:95%'>Закрепление навыков работы
+со справочной литературой.</span></p>
+
+<p class=MsoBodyTextIndent style='text-indent:0in;line-height:95%'><span
+lang=RU style='line-height:95%'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:95%'><b><i><span
+lang=RU style='font-size:14.0pt;line-height:95%'>Литература:</span></i></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:95%'><b><i><span
+lang=RU style='font-size:14.0pt;line-height:95%'>&nbsp;</span></i></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:95%'><span
+lang=RU style='font-size:14.0pt;line-height:95%'>Нсанов М.А. Цифровые
+устройства и микропроцессорные системы. – Алматы, 2004 г., §§ 4.9 – 4.11.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:1.0in;line-height:
+95%'><span lang=RU style='font-size:14.0pt;line-height:95%'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:95%'><b><i><span
+lang=RU style='font-size:14.0pt;line-height:95%'>Подготовка к работе:</span></i></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:95%'><b><i><span
+lang=RU style='font-size:14.0pt;line-height:95%'>&nbsp;</span></i></b></p>
+
+<p class=MsoNormal style='margin-left:0in;text-align:justify;text-indent:.5in;
+line-height:95%'><span lang=RU style='font-size:14.0pt;line-height:95%'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=RU style='font-size:14.0pt;line-height:95%'>Проработать темы
+&quot;Счетчики. Основные понятия и классификация.&quot;, &quot;Счетчики с
+параллельным переносом&quot;. </span></p>
+
+<p class=MsoNormal style='margin-left:0in;text-align:justify;text-indent:.5in;
+line-height:95%'><span lang=RU style='font-size:14.0pt;line-height:95%'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=RU style='font-size:14.0pt;line-height:95%'>Подготовить бланк отчета.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:95%'><span
+lang=RU style='font-size:14.0pt;line-height:95%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:95%'><span
+lang=RU style='font-size:14.0pt;line-height:95%'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:95%'><b><i><span
+lang=RU style='font-size:14.0pt;line-height:95%'>Исходные данные:</span></i></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:95%'><b><i><span
+lang=RU style='font-size:14.0pt;line-height:95%'>&nbsp;</span></i></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:95%'><span
+lang=RU style='font-size:14.0pt;line-height:95%'> Каждому учащемуся выдается
+индивидуальная карточка с заданием.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:95%'><span
+lang=RU style='font-size:14.0pt;line-height:95%'> </span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:95%'><b><i><span
+lang=RU style='font-size:14.0pt;line-height:95%'>Задание:</span></i></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:95%'><b><i><span
+lang=RU style='font-size:14.0pt;line-height:95%'>&nbsp;</span></i></b></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='line-height:95%'>Разработать принципиальную электрическую схему счетчика
+на микросхемах интегральных триггеров и логических элементов с заданным коэффициентом
+счета, режимом работы и началом счета (при достижении предела счетчик
+возвращается в начальное состояние), который формирует результат подсчета
+импульсов обычным двоичным кодом. Все параметры счетчика даются в табл.1 для
+каждого варианта.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='line-height:95%'>Вид триггеров в счетчике выбирается самостоятельно (не
+использовать </span><span style='line-height:95%'>RS</span><span lang=RU
+style='line-height:95%'>-триггеры!): при использовании Т-триггеров оценка
+работы будет увеличена, а при использовании </span><span style='line-height:
+95%'>D</span><span lang=RU style='line-height:95%'>-триггеров – увеличена еще
+больше.</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='line-height:95%'>Базис построения также выбирается самостоятельно: при
+использовании базиса И-НЕ оценка будет выше, но в этом случае следует
+показывать процесс перехода к базису И-НЕ. </span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='line-height:95%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='line-height:95%'><span lang=RU
+style='line-height:95%'>&nbsp;</span></p>
+
+<p class=MsoBodyTextIndent style='margin-left:.5in;text-indent:0in;line-height:
+95%'><span lang=RU style='line-height:95%'>                                                                                                           
+Табл. 1</span></p>
+
+<div align=center>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none'>
+ <tr>
+  <td width=73 style='width:55.05pt;border:solid black 1.5pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>Номер</span></p>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>вар.</span></p>
+  </td>
+  <td width=85 style='width:63.75pt;border-top:solid black 1.5pt;border-left:
+  none;border-bottom:solid black 1.5pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>Режим</span></p>
+  </td>
+  <td width=57 style='width:42.55pt;border-top:solid black 1.5pt;border-left:
+  none;border-bottom:solid black 1.5pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>Цикл</span></p>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>N</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:solid black 1.5pt;border-left:
+  none;border-bottom:solid black 1.5pt;border-right:solid windowtext 2.25pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>Начало</span></p>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>счета</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:solid black 1.5pt;border-left:
+  none;border-bottom:solid black 1.5pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>Номер</span></p>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>вар.</span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:solid black 1.5pt;border-left:
+  none;border-bottom:solid black 1.5pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>Режим</span></p>
+  </td>
+  <td width=57 style='width:42.5pt;border-top:solid black 1.5pt;border-left:
+  none;border-bottom:solid black 1.5pt;border-right:solid black 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>Цикл</span></p>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>N</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border:solid black 1.5pt;border-left:none;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>Начало</span></p>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>счета</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=73 style='width:55.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>1</span></p>
+  </td>
+  <td width=85 style='width:63.75pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>суммир.</span></p>
+  </td>
+  <td width=57 style='width:42.55pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>11</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>0</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>20</span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>суммир.</span></p>
+  </td>
+  <td width=57 style='width:42.5pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>12</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>3</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=73 style='width:55.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>2</span></p>
+  </td>
+  <td width=85 style='width:63.75pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>суммир.</span></p>
+  </td>
+  <td width=57 style='width:42.55pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>13</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>0</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>21</span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>суммир.</span></p>
+  </td>
+  <td width=57 style='width:42.5pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>13</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>1</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=73 style='width:55.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>3</span></p>
+  </td>
+  <td width=85 style='width:63.75pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>суммир.</span></p>
+  </td>
+  <td width=57 style='width:42.55pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>14</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>0</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>22</span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>суммир.</span></p>
+  </td>
+  <td width=57 style='width:42.5pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>13</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>2</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=73 style='width:55.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>4</span></p>
+  </td>
+  <td width=85 style='width:63.75pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>суммир.</span></p>
+  </td>
+  <td width=57 style='width:42.55pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>15</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>0</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>23</span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>суммир.</span></p>
+  </td>
+  <td width=57 style='width:42.5pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>13</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>3</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=73 style='width:55.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>5</span></p>
+  </td>
+  <td width=85 style='width:63.75pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>вычит.</span></p>
+  </td>
+  <td width=57 style='width:42.55pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>9</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>0</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>24</span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>суммир.</span></p>
+  </td>
+  <td width=57 style='width:42.5pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>14</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>2</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=73 style='width:55.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>6</span></p>
+  </td>
+  <td width=85 style='width:63.75pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>вычит.</span></p>
+  </td>
+  <td width=57 style='width:42.55pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>10</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>0</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>25</span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>вычит.</span></p>
+  </td>
+  <td width=57 style='width:42.5pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>9</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>10</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=73 style='width:55.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>7</span></p>
+  </td>
+  <td width=85 style='width:63.75pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>вычит.</span></p>
+  </td>
+  <td width=57 style='width:42.55pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>11</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>0</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>26</span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>вычит.</span></p>
+  </td>
+  <td width=57 style='width:42.5pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>10</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>11</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=73 style='width:55.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>8</span></p>
+  </td>
+  <td width=85 style='width:63.75pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>вычит.</span></p>
+  </td>
+  <td width=57 style='width:42.55pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>13</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>0</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>27</span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>вычит.</span></p>
+  </td>
+  <td width=57 style='width:42.5pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>10</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>12</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=73 style='width:55.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>9</span></p>
+  </td>
+  <td width=85 style='width:63.75pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>вычит.</span></p>
+  </td>
+  <td width=57 style='width:42.55pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>15</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>0</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>28</span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>вычит.</span></p>
+  </td>
+  <td width=57 style='width:42.5pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>11</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>11</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=73 style='width:55.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>10</span></p>
+  </td>
+  <td width=85 style='width:63.75pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>суммир.</span></p>
+  </td>
+  <td width=57 style='width:42.55pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>9</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>5</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>29</span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>вычит.</span></p>
+  </td>
+  <td width=57 style='width:42.5pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>11</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>12</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=73 style='width:55.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>11</span></p>
+  </td>
+  <td width=85 style='width:63.75pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>суммир.</span></p>
+  </td>
+  <td width=57 style='width:42.55pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>9</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>7</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>30</span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>вычит.</span></p>
+  </td>
+  <td width=57 style='width:42.5pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>11</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>13</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=73 style='width:55.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>12</span></p>
+  </td>
+  <td width=85 style='width:63.75pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>суммир.</span></p>
+  </td>
+  <td width=57 style='width:42.55pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>10</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>3</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>31</span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>вычит.</span></p>
+  </td>
+  <td width=57 style='width:42.5pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>11</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>15</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=73 style='width:55.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>13</span></p>
+  </td>
+  <td width=85 style='width:63.75pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>суммир.</span></p>
+  </td>
+  <td width=57 style='width:42.55pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>10</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>4</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>32</span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>вычит.</span></p>
+  </td>
+  <td width=57 style='width:42.5pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>12</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>12</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=73 style='width:55.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>14</span></p>
+  </td>
+  <td width=85 style='width:63.75pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>суммир.</span></p>
+  </td>
+  <td width=57 style='width:42.55pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>10</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>6</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>33</span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>вычит.</span></p>
+  </td>
+  <td width=57 style='width:42.5pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>12</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>13</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=73 style='width:55.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>15</span></p>
+  </td>
+  <td width=85 style='width:63.75pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>суммир.</span></p>
+  </td>
+  <td width=57 style='width:42.55pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>11</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>2</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>34</span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>вычит.</span></p>
+  </td>
+  <td width=57 style='width:42.5pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>13</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>13</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=73 style='width:55.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>16</span></p>
+  </td>
+  <td width=85 style='width:63.75pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>суммир.</span></p>
+  </td>
+  <td width=57 style='width:42.55pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>11</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>3</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>35</span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>вычит.</span></p>
+  </td>
+  <td width=57 style='width:42.5pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>13</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>14</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=73 style='width:55.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>17</span></p>
+  </td>
+  <td width=85 style='width:63.75pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>суммир.</span></p>
+  </td>
+  <td width=57 style='width:42.55pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>11</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>4</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>36</span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>вычит.</span></p>
+  </td>
+  <td width=57 style='width:42.5pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>14</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>14</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=73 style='width:55.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>18</span></p>
+  </td>
+  <td width=85 style='width:63.75pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>суммир.</span></p>
+  </td>
+  <td width=57 style='width:42.55pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>11</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>5</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>37</span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>вычит.</span></p>
+  </td>
+  <td width=57 style='width:42.5pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>14</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.0pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>15</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=73 style='width:55.05pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:solid black 1.5pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>19</span></p>
+  </td>
+  <td width=85 style='width:63.75pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.5pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>суммир.</span></p>
+  </td>
+  <td width=57 style='width:42.55pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.5pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>12</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.5pt;border-right:solid windowtext 2.25pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>2</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.5pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>38</span></p>
+  </td>
+  <td width=85 style='width:63.8pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.5pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span lang=RU style='line-height:95%'>вычит.</span></p>
+  </td>
+  <td width=57 style='width:42.5pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.5pt;border-right:solid black 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>15</span></p>
+  </td>
+  <td width=76 style='width:56.7pt;border-top:none;border-left:none;border-bottom:
+  solid black 1.5pt;border-right:solid black 1.5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoBodyTextIndent align=center style='text-align:center;text-indent:
+  0in;line-height:95%'><span style='line-height:95%'>15</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoBodyTextIndent style='margin-left:.5in;text-indent:0in;line-height:
+95%'><span lang=RU style='line-height:95%'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:95%'><b><i><span
+lang=RU style='font-size:14.0pt;line-height:95%'>Содержание отчета:</span></i></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:95%'><b><i><span
+lang=RU style='font-size:14.0pt;line-height:95%'>&nbsp;</span></i></b></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:95%'><span
+lang=RU style='font-size:14.0pt;line-height:95%'>Все записи, рисунки, таблицы и
+схема, необходимые для решения поставленной задачи. Каждый этап работы должен
+иметь номер и краткое пояснение. Схема обязательно выполняется карандашом, по
+линейке и с соблюдением всех стандартов.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:95%'><span
+lang=RU style='font-size:14.0pt;line-height:95%'>Результат выполнения каждого
+пункта задания должен быть показан преподавателю для проверки.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:95%'><span
+lang=RU style='font-size:14.0pt;line-height:95%'>&nbsp;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:95%'><b><i><span
+lang=RU style='font-size:14.0pt;line-height:95%'>Контрольные вопросы:</span></i></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:95%'><b><i><span
+lang=RU style='font-size:14.0pt;line-height:95%'>&nbsp;</span></i></b></p>
+
+<p class=MsoNormal style='margin-left:0in;text-align:justify;text-indent:.5in;
+line-height:95%'><span lang=RU style='font-size:14.0pt;line-height:95%'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=RU style='font-size:14.0pt;line-height:95%'>Назначение и классификация счетчиков.</span></p>
+
+<p class=MsoNormal style='margin-left:0in;text-align:justify;text-indent:.5in;
+line-height:95%'><span lang=RU style='font-size:14.0pt;line-height:95%'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=RU style='font-size:14.0pt;line-height:95%'>Уметь разработать схему
+счетчика по любым заданным условиям на микросхемах интегральных триггеров и
+логических элементов.</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:95%'><span
+lang=RU style='font-size:14.0pt;line-height:95%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:95%'><span
+lang=RU style='font-size:14.0pt;line-height:95%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:95%'><span
+lang=RU style='font-size:14.0pt;line-height:95%'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;text-indent:.5in;line-height:95%'><span
+lang=RU style='font-size:14.0pt;line-height:95%'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>
