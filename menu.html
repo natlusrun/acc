@@ -34,9 +34,9 @@
        <div class="main-header">
       
         <div class="header-menu">
-         <a class="main-header-link is-active" href="./content.html" target="content">ACC</a>
-         <a class="main-header-link" href="./Files/web/компт техн.html" target="content">Комп.техн</a>
-         <a class="main-header-link" href="./Files/web/микропроцессорная_техника.html" target="content">Микр.тех</a>
+         <a class="main-header-link is-active" id="main-header-main" href="./content.html" target="content" onclick="document.getElementById('main-header-main').classList.add('is-active'); document.getElementById('main-header-link').classList.remove('is-active'); document.getElementById('main-header-last').classList.remove('is-active');">ACC</a>
+         <a class="main-header-link" id="main-header-link" href="./Files/web/компт техн.html" target="content" onclick="document.getElementById('main-header-link').classList.add('is-active'); document.getElementById('main-header-main').classList.remove('is-active'); document.getElementById('main-header-last').classList.remove('is-active');">Комп.техн</a>
+         <a class="main-header-link" id="main-header-last" href="./Files/web/микропроцессорная_техника.html" onclick="document.getElementById('main-header-last').classList.add('is-active'); document.getElementById('main-header-link').classList.remove('is-active'); document.getElementById('main-header-main').classList.remove('is-active'); document.getElementById('main-header-link').classList.remove('is-active');" target="content">Микр.тех</a>
     
         </div>
        </div>
