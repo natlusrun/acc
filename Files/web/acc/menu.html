@@ -19,6 +19,16 @@
 	font-weight:300;
     border-radius: 1em;
     border-radius: 1em;
+      font-family: var(--body-font);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  width: 100%;
+  height: 100vh;
  
 
 
@@ -26,9 +36,7 @@
 }
 
 
-@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
 
 
 .settings {
@@ -114,7 +122,7 @@ font-size:20px;
 
 
 .main-menu:hover, nav.main-menu.expanded {
-width:250px;
+width:100%;
 overflow:hidden;
 opacity:1;
 
@@ -127,14 +135,24 @@ top: -50px;
 bottom:0;
 height:100%;
 left: 0px;
-width: 47px;
+width: 100%;
+color: white;
 overflow:hidden;
 -webkit-transition:width .2s linear;
 transition:width .2s linear;
 -webkit-transform:translateZ(0) scale(1,1);
 transform: translateZ(0) scale(1,1);
 box-shadow: 1px 0 15px rgba(0, 0, 0, 0.07);
-opacity:1;
+background: url(/src/Files/bg.mp4);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  width: 100%;
+  height: 100vh;
 }
 
 .main-menu>ul {
@@ -145,7 +163,7 @@ margin-left: -50px;
 .main-menu li {
 position:relative;
 display:block;
-width:250px;
+width:100%;
   
 
 
@@ -153,12 +171,12 @@ width:250px;
 
 .main-menu li>a {
 position:relative;
-width:255px;
+width:100%;
 display:table;
 border-collapse:collapse;
 border-spacing:0;
 color:#8a8a8a;
-font-size: 13px;
+font-size: 18px;
 text-decoration:none;
 -webkit-transform:translateZ(0) scale(1,1);
 transform: translateZ(0) scale(1,1);
@@ -176,7 +194,7 @@ text-shadow: 1px 1px 1px  #fff;
   
 position:relative;
 display:table-cell;
-width:55px;
+width:100%;
 height:36px;
 text-align:center;
 vertical-align:middle;
@@ -185,12 +203,19 @@ font-size:18px;
 }
 
 .main-menu .nav-text  {
-   
+   color: white;
 position:relative;
 display:table-cell;
 vertical-align:middle;
-width:190px;
+width:100%;
+font-size: 24px;
 font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu .nav-text:hover  {
+font-size: 25px;
+text-decoration: none;
+margin-top: -20px;
 }
 
 
@@ -199,7 +224,7 @@ font-family: 'Titillium Web', sans-serif;
 
 .main-menu .fb-like {
 
-left: 180px;
+left: 100%;
 position:absolute;
 top: 15px;
 }
@@ -310,7 +335,6 @@ background: var(--button-background);
 text-shadow: 0px 0px 0px; 
 }
 .area {
-float: left;
 background: #e2e2e2;
 width: 100%;
 height: 100%;
@@ -364,14 +388,21 @@ a.button:hover {
   position: relative;
   padding: 0;
   margin-right: 1em;
+  top: 300px;
+  text-align: center;
+  font-size: 30px;
   
   border: none;
 }
 
 .dropdown summary {
   list-style: none;
+  font-size: 30px;
+
   list-style-type: none;
 }
+
+
 
 .dropdown > summary::-webkit-details-marker {
   display: none;
@@ -390,6 +421,8 @@ a.button:hover {
 }
 
 .dropdown ul {
+  font-size: 30px;
+
   position: absolute;
   margin: 20px 0 0 0;
   padding: 20px 0;
@@ -407,6 +440,8 @@ a.button:hover {
 .dropdown ul li {
   padding: 0;
   margin: 0;
+  font-size: 30px;
+
 }
 
 .dropdown ul li a:link, .dropdown ul li a:visited {
@@ -455,6 +490,29 @@ a.button:hover {
     z-index: 1;
 }
 
+.video-bg {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.video-bg video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body.light-mode:before, body.light-mode .video-bg:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.45) 100%);
+  backdrop-filter: saturate(3);
+}
 
 </style>
 
@@ -468,6 +526,12 @@ a.button:hover {
 
 </head>
 <body>
+  <div class="video-bg">
+    <video width="1920" height="1080" autoplay loop muted>
+     <source src="/Files/bg.mp4" type="video/mp4">
+   Your browser does not support the video tag.
+   </video>
+  </div> 
 
 
 
@@ -480,14 +544,7 @@ a.button:hover {
 <div class="scrollbar" id="style-1">
 
    
-<li>                                 
-<a href="#">
-
-    <span><a href="content.html" target="content" style="margin-left: 5px; width: 100%; height: 30px; text-decoration: none;">Меню</a>
-    </span>
-
-</a>
-</li>   
+ 
 
     
 <li>                                 
@@ -522,22 +579,22 @@ a.button:hover {
           <a class="button">  <i class="fa fa-user fa-lg"></i>  <span class="nav-text">Практические КС и СА</span></a>
         </summary>
         <ul>
-            <li><a href="./Пр 1/ПР 1-2 КС и СА1.html" target="content">ПР 1-2 КС и СА</a></li>
-            <li><a href="./Пр 2/ПР 3-4 КС и СА.html" target="content">ПР 3-4 КС и СА</a></li>
-            <li><a href="./Пр 3/ПР 5 КС и СА.html" target="content">ПР 5 КС и СА</a></li>
-            <li><a href="./Пр 4/ПР 6 КС и СА.html" target="content">ПР 6 КС и СА</a></li>
-            <li><a href="./Пр 5/ПР 7 КС  и СА.html" target="content">ПР 7 КС и СА</a></li>
-            <li><a href="./Пр 6/ПР 8 КС и СА.html" target="content">ПР 8 КС и СА</a></li>
-            <li><a href="./Пр 7/ПР 9 КС и СА.html" target="content">ПР 9 КС и СА</a></li>
-            <li><a href="./Пр 8/ПР 10 КС и С.html" target="content">ПР 10 КС и СА</a></li>
-            <li><a href="./Пр 9/ПР 11 КС и СА.html" target="content">ПР 11 КС и СА</a></li>
-            <li><a href="./Пр 10/ПР 12 КС и СА.html" target="content">ПР 12 КС и СА</a></li>
-            <li><a href="./Пр 11/ПР 13 КС и СА.html" target="content">ПР 13 КС и СА</a></li>
-            <li><a href="./Пр 12/ПР 14 КС и СА.html" target="content">ПР 14 КС и СА</a></li>
-            <li><a href="./Пр 13/ПР 15 КС и СА.html" target="content">ПР 15 КС и СА</a></li>
-            <li><a href="./Пр 14/ПР 16 КС и СА.html" target="content">ПР 16 КС и СА</a></li>
-            <li><a href="./Пр 15/ПР 17 КС и СА.html" target="content">ПР 17 КС и СА</a></li>
-            <li><a href="./Пр 16/ПР 18 КС и СА.html" target="content">ПР 18 КС и СА</a></li>
+            <li><a href="./Прак/ПР 1-2 КС и СА.html" target="content">ПР 1-2 КС и СА</a></li>
+            <li><a href="./Прак/ПР 3-4 КС и СА.html" target="content">ПР 3-4 КС и СА</a></li>
+            <li><a href="./Прак/ПР 5 КС и СА.html" target="content">ПР 5 КС и СА</a></li>
+            <li><a href="./Прак/ПР 6 КС и СА.html" target="content">ПР 6 КС и СА</a></li>
+            <li><a href="./Прак/ПР 7 КС  и СА.html" target="content">ПР 7 КС и СА</a></li>
+            <li><a href="./Прак/ПР 8 КС и СА.html" target="content">ПР 8 КС и СА</a></li>
+            <li><a href="./Прак/ПР 9 КС и СА.html" target="content">ПР 9 КС и СА</a></li>
+            <li><a href="./Прак/ПР 10 КС и С.html" target="content">ПР 10 КС и СА</a></li>
+            <li><a href="./Прак/ПР 11 КС и СА.html" target="content">ПР 11 КС и СА</a></li>
+            <li><a href="./Прак/ПР 12 КС и СА.html" target="content">ПР 12 КС и СА</a></li>
+            <li><a href="./Прак/ПР 13 КС и СА.html" target="content">ПР 13 КС и СА</a></li>
+            <li><a href="./Прак/ПР 14 КС и СА.html" target="content">ПР 14 КС и СА</a></li>
+            <li><a href="./Прак/ПР 15 КС и СА.html" target="content">ПР 15 КС и СА</a></li>
+            <li><a href="./Прак/ПР 16 КС и СА.html" target="content">ПР 16 КС и СА</a></li>
+            <li><a href="./Прак/ПР 17 КС и СА.html" target="content">ПР 17 КС и СА</a></li>
+            <li><a href="./Прак/ПР 18 КС и СА.html" target="content">ПР 18 КС и СА</a></li>
 
             
            
